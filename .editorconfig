@@ -1,0 +1,47 @@
+root = true
+
+[*]
+end_of_line = lf
+max_char = 150
+
+[**.sol]
+indent_style = space
+indent_size = 2
+quote_type = single
+
+[**.js]
+indent_style = space
+indent_size = 2
+quote_type = single
+
+[**.ts]
+indent_style = space
+indent_size = 2
+quote_type = single
+
+[**.tsx]
+e4x = true
+indent_style = space
+indent_size = 2
+quote_type = single
+
+[**.json]
+indent_style = space
+indent_size = 2
+quote_type = double
+
+[**.jsx]
+e4x = true
+indent_style = space
+indent_size = 2
+quote_type = single
+
+[**.css]
+indent_style = space
+indent_size = 2
+
+[**.html]
+indent_style = space
+indent_size = 2
+max_char = 78
+brace_style = expand
