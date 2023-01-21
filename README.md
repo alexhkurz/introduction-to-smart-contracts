@@ -14,5 +14,51 @@ The purpose of the course is to give a hands on introduction in how to develop a
 
 ... more to follow soon ...
 
+## Required Steps for Testing and Deployment
 
+Install Foundry -> https://book.getfoundry.sh/getting-started/installation.html
 
+```
+npm i # install project npm modules
+forge install # install project foundry modules
+```
+
+Configure `.env` file -> see `.env.example`
+
+This framework has been written to use various testnets and mainnets. Test ETH has been encoded into the tasks for localhost deployment. For testnets, test ETH, BNB, or ETC is required which can be received from their corresponding faucets. An .env is used for running on other networks outside of localhost.
+
+Configured Networks:
+
+- Localhost
+- Goerli. Faucet: https://goerlifaucet.com/
+- BSC Testnet. Faucet: https://testnet.bnbchain.org/faucet-smart
+- BSC.
+- Mordor. Faucet: https://easy.hebeswap.com/#/faucet
+
+## NPM Commands
+
+```
+npm run compile # runs hardhat compile
+npm run clean # runs hardhat clean
+npm run test # runs unit tests via Forge
+```
+
+## Hardhat Tasks
+
+```
+npx hardhat # lists all available hardhat tasks
+
+npx hardhat --network <network_name> balance --account <account_address> # retrieves account balance on specified network
+
+npx hardhat --network <network_name> deploy --contract <contract_name> # Deploys given contract to specified network
+
+npx hardhat --network <network_name> deployproxy --contract <contract_name> # Deploys provided upgradeable contract to specified network. Proxy type is UUPS
+
+npx hardhat --network <network_name> flatten <contract_file_path> > <output_file_path> # Flattens contracts and dependecies to output file
+
+npx hardhat --network <network_name> initialize --contract <contract_name> --contract-address <deployed_contract_address> # Initializes provided upgradeable contract on specified network
+
+npx hardhat --network <network_name> validateupgrade --contract <new_contract_name> --proxy-address <deployed_proxy_contract_address> # Validates new implementation contract without deploying it
+
+npx hardhat --network <network_name> verify <deployed_contract_address> # verifies source code on Etherscan or BSCSCAN. Supported networks are Goerli, BSC, BSC Testnet
+```
