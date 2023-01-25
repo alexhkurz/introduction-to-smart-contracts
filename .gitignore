@@ -1,0 +1,17 @@
+node_modules/
+abi/
+.DS_Store
+out/
+contracts/flattened/
+.openzeppelin/
+# lib/
+
+#Hardhat files
+cache
+artifacts
+typechain/
+coverage/
+coverage.json
+.next/
+.env
+typechain-types/
