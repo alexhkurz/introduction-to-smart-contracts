@@ -23,7 +23,7 @@ npm i # install project npm modules
 forge install # install project foundry modules
 ```
 
-Configure `.env` file -> see `[.env.example](https://github.com/alexhkurz/introduction-to-smart-contracts/blob/main/.env.example)`
+Configure `.env` file -> see [`.env.example`](https://github.com/alexhkurz/introduction-to-smart-contracts/blob/main/.env.example)
 
 This framework has been written to use various testnets and mainnets. Test ETH has been encoded into the tasks for localhost deployment. For testnets, test ETH, BNB, or ETC is required which can be received from their corresponding faucets. An .env is used for running on other networks outside of localhost.
 
