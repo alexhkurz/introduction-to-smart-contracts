@@ -6,13 +6,13 @@ This course will be taught at Chapman University in Spring 2023 as a section of 
 
 ## Introduction to Smart Contracts
 
-(created by [Alexander Kurz](https://www.chapman.edu/our-faculty/alexander-kurz) and [Ronan Kearns](https://www.linkedin.com/in/ronank/) from Chapman and [Jeff Turner](https://www.linkedin.com/in/composedao/) from ComposeDAO)
+(created by [Alexander Kurz](https://www.chapman.edu/our-faculty/alexander-kurz) and [Ronan Kearns](https://www.linkedin.com/in/ronank/) from Chapman and [Jeff Turner](https://www.linkedin.com/in/composedao/) and Steve Preston from ComposeDAO)
 
-Jan 30 - May 20 in Keck 153, Wed 12-1pm
+Feb 1 - May 10 in Keck 153, Wed 12-1pm. No classes March 22 (Spring break).
 
-The purpose of the course is to give a hands on introduction in how to develop a dApp using smart contracts.
+The purpose of the course is to give a hands-on introduction in how to develop a dApp using smart contracts.
 
-... more to follow soon ...
+[Lecture by lecture](lecture-by-lecture.md)
 
 ## Required Steps for Testing and Deployment
 
@@ -23,7 +23,7 @@ npm i # install project npm modules
 forge install # install project foundry modules
 ```
 
-Configure `.env` file -> see `.env.example`
+Configure `.env` file -> see `[.env.example](https://github.com/alexhkurz/introduction-to-smart-contracts/blob/main/.env.example)`
 
 This framework has been written to use various testnets and mainnets. Test ETH has been encoded into the tasks for localhost deployment. For testnets, test ETH, BNB, or ETC is required which can be received from their corresponding faucets. An .env is used for running on other networks outside of localhost.
 
