@@ -45,12 +45,32 @@ npm run test # runs unit tests via Forge
 
 ## Hardhat Tasks
 
+To deploy your contract use
+
+```
+npx hardhat --network goerli deploy --contract <contract_name> 
+```
+
+If you get `Error: insufficient funds` go to [goerlifaucet](https://goerlifaucet.com/), use your Alchemy login, and enter the wallet address you get from your Metamask wallet. If everything worked you see in your terminal
+
+`Contract deployed to: <deployed_contract_address>    
+
+To "verify" your contract run
+
+```
+npx hardhat --network goerli verify <deployed_contract_address> 
+```
+
+If you get `Error [...] no API token was found` go to [Etherscan](https://etherscan.io/), create an account, get an API-key and add it to your `.env` 
+
+Now you should be able to interact via your Metamask wallet with your contract on the testnetwork.
+
+Summary of hardhat commands:
+
 ```
 npx hardhat # lists all available hardhat tasks
 
 npx hardhat --network <network_name> balance --account <account_address> # retrieves account balance on specified network
-
-npx hardhat --network <network_name> deploy --contract <contract_name> # Deploys given contract to specified network
 
 npx hardhat --network <network_name> deployproxy --contract <contract_name> # Deploys provided upgradeable contract to specified network. Proxy type is UUPS
 
@@ -59,6 +79,8 @@ npx hardhat --network <network_name> flatten <contract_file_path> > <output_file
 npx hardhat --network <network_name> initialize --contract <contract_name> --contract-address <deployed_contract_address> # Initializes provided upgradeable contract on specified network
 
 npx hardhat --network <network_name> validateupgrade --contract <new_contract_name> --proxy-address <deployed_proxy_contract_address> # Validates new implementation contract without deploying it
+
+npx hardhat --network <network_name> deploy --contract <contract_name> # Deploys given contract to specified network
 
 npx hardhat --network <network_name> verify <deployed_contract_address> # verifies source code on Etherscan or BSCSCAN. Supported networks are Goerli, BSC, BSC Testnet
 ```
