@@ -2,7 +2,7 @@
 
 (under consruction)
 
-This course will be taught at Chapman University in Spring 2023 as a section of CPSC 298, the Computer Science Colloquium, which offers one credit courses (one lecture per week) on a current topic of interest. The title of this section is
+A course at Chapman University Spring 2023 as a section of CPSC 298, the Computer Science Colloquium, which offers one credit courses (one lecture per week) on a current topic of interest. The title of this section is
 
 ## Introduction to Smart Contracts
 
@@ -12,7 +12,7 @@ Feb 1 - May 10 in Keck 153, Wed 12-1pm. No classes March 22 (Spring break).
 
 The purpose of the course is to give a hands-on introduction in how to develop a dApp using smart contracts.
 
-[Lecture by lecture](lecture-by-lecture.md)
+- [Lecture by lecture](lecture-by-lecture.md)
 
 ## Required Steps for Testing and Deployment
 
