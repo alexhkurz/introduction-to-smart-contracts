@@ -12,7 +12,7 @@ Feb 1 - May 10 in Keck 153, Wed 12-1pm. No classes March 22 (Spring break).
 
 The purpose of the course is to give a hands-on introduction in how to develop a dApp using smart contracts.
 
-- [Lecture by lecture](lecture-by-lecture.md)
+- [Lecture by lecture](lectures/lecture-by-lecture.md)
 
 ## Required Steps for Testing and Deployment
 
