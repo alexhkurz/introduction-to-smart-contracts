@@ -767,10 +767,10 @@
     {
       "id": "36xkRZB_UnGIjoc5p0fLb",
       "type": "arrow",
-      "x": 412.065185546875,
-      "y": 309.7981262207031,
-      "width": 1.1260790677648629,
-      "height": 62.27911376953125,
+      "x": 412.136962890625,
+      "y": 310.2995300292969,
+      "width": 0.34600477769936333,
+      "height": 83.78051757812494,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "#000",
@@ -784,11 +784,11 @@
         "type": 2
       },
       "seed": 216383838,
-      "version": 115,
-      "versionNonce": 56309854,
+      "version": 178,
+      "versionNonce": 918055362,
       "isDeleted": false,
       "boundElements": null,
-      "updated": 1675540775651,
+      "updated": 1675541200072,
       "link": null,
       "locked": false,
       "points": [
@@ -797,16 +797,16 @@
           0
         ],
         [
-          -1.1260790677648629,
-          -62.27911376953125
+          -0.34600477769936333,
+          -83.78051757812494
         ]
       ],
       "lastCommittedPoint": null,
       "startBinding": null,
       "endBinding": {
         "elementId": "KCWrMYx-FL5dZ2ErIR8aj",
-        "focus": 0.14825090006719036,
-        "gap": 1.958984375
+        "focus": 0.06591129142331147,
+        "gap": 1.9589843750000568
       },
       "startArrowhead": null,
       "endArrowhead": "bar"
@@ -814,10 +814,10 @@
     {
       "id": "KCWrMYx-FL5dZ2ErIR8aj",
       "type": "text",
-      "x": 376.3486022949219,
+      "x": 345.8486022949219,
       "y": 182.56002807617188,
-      "width": 80,
-      "height": 63,
+      "width": 141,
+      "height": 42,
       "angle": 0,
       "strokeColor": "#000000",
       "backgroundColor": "#000",
@@ -829,8 +829,8 @@
       "groupIds": [],
       "roundness": null,
       "seed": 446875998,
-      "version": 171,
-      "versionNonce": 1566147714,
+      "version": 190,
+      "versionNonce": 1138958110,
       "isDeleted": false,
       "boundElements": [
         {
@@ -838,17 +838,17 @@
           "type": "arrow"
         }
       ],
-      "updated": 1675540775651,
+      "updated": 1675541200071,
       "link": null,
       "locked": false,
-      "text": "non-fiat\nnumeraire\nset value",
+      "text": "token or non-fiat\nnumeraire",
       "fontSize": 16.689705016121035,
       "fontFamily": 1,
       "textAlign": "center",
       "verticalAlign": "top",
-      "baseline": 57,
+      "baseline": 36,
       "containerId": null,
-      "originalText": "non-fiat\nnumeraire\nset value"
+      "originalText": "token or non-fiat\nnumeraire"
     },
     {
       "type": "text",
