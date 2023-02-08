@@ -26,9 +26,9 @@ Here's a step-by-step guide to get started with MetaMask and Etherscan:
    
 6.  Open the smart contract's page and look for the "Contract" tab.
    
-7.  Copy the smart contract's address and paste it into the "Add Contract" section of the MetaMask wallet.
+7.  Connect your MetaMask wallet to the smart contract by clicking on the "Connect to Contract" button.
    
-8.  Connect your MetaMask wallet to the smart contract by clicking on the "Connect to Contract" button.
+8.  Look at the functions offered under the Read Contract tab and Write Contract tab.
    
 9.  Verify the details of the smart contract, such as its functions and variables, and interact with it by calling its functions.
    
