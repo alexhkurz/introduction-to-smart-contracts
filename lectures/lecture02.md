@@ -18,10 +18,6 @@ As an example we use [PayAndGuess](https://github.com/alexhkurz/SmartContracts/t
 
 [Assignment 2](assignment02.md)
 
-## Documentation
-
-- https://ethereum.org/en/developers/docs/transactions/?
-- https://docs.soliditylang.org/en/develop/units-and-global-variables.html#block-and-transaction-properties
 
 
 
