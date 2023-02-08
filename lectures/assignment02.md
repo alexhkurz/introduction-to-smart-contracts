@@ -13,7 +13,7 @@ In this assignment, you will be given the task of either changing or adding a fu
 
 ## Instructions
 
-1. Copy the PayAndGuess0 smart contract code from the GitHub to use in Remix for Step 3. https://github.com/alexhkurz/introduction-to-smart-contracts/tree/main/lectures/lecture02
+1. Copy the [PayAndGuess0](https://github.com/alexhkurz/SmartContracts/blob/main/Tutorial/PayAndGuess/PayAndGuess0.sol) to use in Remix. 
     
 2. Complete the following tasks: 
 
@@ -21,7 +21,7 @@ In this assignment, you will be given the task of either changing or adding a fu
 
       b. Change the "disburse" function to add a 1% fee to the amount paid. The fee should be added to a new variable "fee". The "disburse" function should then transfer the fee to a designated address, while transferring the rest of the paid amount to the payer.  
 
-Here are some more options:
+	Here are some more options:
       
       c. Add a new function to the contract that allows the payer to guess a number. The function should take in a single argument - the guess - and compare it to a randomly generated number. If the guess is correct, the payer should receive double the amount they paid. 
       
@@ -36,5 +36,5 @@ Here are some more options:
 	  e. Click the "Deploy" button to deploy the contract to the Ethereum network. 
 	  f. Interact with the deployed contract by calling its functions and observing its state.
 		  - make sure that when you call functions like PayAndGuess that require  ETH, you enter an amount in the Value box and change the currency to ETH.
-		  
+
 4. Submit the modified smart contract code and a brief explanation your changes and how they work.
