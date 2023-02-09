@@ -19,7 +19,7 @@ In this assignment, you will be given the task of either changing or adding a fu
 
     a. Add a function `disburseJackpot` that sends the full balance that the contract holds to whoever calls the function `disburseJackpot`.
 
-    b. Change the "disburse" function to add a 1% fee to the amount paid. The fee should be added to a new variable "fee". The "disburse" function should then transfer the fee to a designated address, while transferring the rest of the paid amount to the payer.  
+    b. Change the "disburse" function to add a 1% fee to the amount paid. The fee should be added to a new variable "fee". The "disburse" function should then transfer the fee back to the contract, while transferring the rest of the paid amount to the payer.  
 
 	Here are some more options:
       
