@@ -15,17 +15,15 @@ In this assignment, you will be given the task of either changing or adding a fu
 
 1. Copy the [PayAndGuess0](https://github.com/alexhkurz/SmartContracts/blob/main/Tutorial/PayAndGuess/PayAndGuess0.sol) to use in Remix. 
     
-2. Complete the following tasks: 
+2. Complete one of the following tasks: 
 
-    a. Add a function `disburseJackpot` that sends the full balance that the contract holds to whoever calls the function `disburseJackpot`.
+    a. Extend the smart contract so that it remembers who sent money and how much. Try alter the contract so that disburse acts as a FILO buffer stack.
 
     b. Change the "doPay" function to add a 1% fee to the amount paid. The fee should be added to a new variable "fee".
 
 	Here are some more options:
       
-    c. Add a new function to the contract that allows the payer to guess a number. The function should take in a single argument - the guess - and compare it to a randomly generated number. If the guess is correct, the payer should receive double the amount they paid. 
-      
-    d. Write your own or change an existing function.
+    c. Write your own or change an existing function.
       
 3. Develop, compile and deploy the contract to the Ethereum network using Remix Online IDE:   
 	a. Go to [https://remix.ethereum.org/](https://remix.ethereuorg/)  
