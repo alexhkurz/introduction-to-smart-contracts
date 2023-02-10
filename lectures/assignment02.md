@@ -1,6 +1,6 @@
-# Assignment 2: Modifying the PayAndGuess Smart Contract
+# Assignment 2: Modifying `PayAndGuess` 
 
-In this assignment, you will be given the task of either changing or adding a function to the PayAndGuess0 smart contract. The goal of the assignment is to get you familiar with the basics of smart contract development and solidity programming.  
+In this assignment, you will be given the task of either changing or adding a function to the `PayAndGuess0` smart contract. The goal of the assignment is to get you familiar with the basics of smart contract development and solidity programming.  
 
 ## Resources
 
@@ -13,7 +13,7 @@ In this assignment, you will be given the task of either changing or adding a fu
 
 ## Instructions
 
-1. Copy the [PayAndGuess0](https://github.com/alexhkurz/SmartContracts/blob/main/Tutorial/PayAndGuess/PayAndGuess0.sol) to use in Remix. 
+1. Copy [`PayAndGuess0`](https://github.com/alexhkurz/SmartContracts/blob/main/Tutorial/PayAndGuess/PayAndGuess0.sol) to use in Remix. 
     
 2. Complete one of the following tasks: 
 
