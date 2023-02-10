@@ -26,13 +26,21 @@ In this assignment, you will be given the task of either changing or adding a fu
     c. Write your own or change an existing function.
       
 3. Develop, compile and deploy the contract to the Ethereum network using Remix Online IDE:   
+
 	a. Go to [https://remix.ethereum.org/](https://remix.ethereuorg/)  
-	b. In the "File Explorer" section, use the default_workspaceclick the file button to create a new file in the contracttab and give it a name (e.g., "PayAndGuess.sol").  
+
+	b. In the "File Explorer" section, use the default_workspaceclick the file button to create a new file in the contract tab and give it a name (e.g., "PayAndGuess.sol").  
+
 	c. Copy the modified smart contract code into the new file.  
+
 	d. Compile the smart contract in the Solidity Compiler tab.  
+
 	e. In the "Deploy & Run" tab, select "Remix VM London" undethe "Environment" section.  
+	
 	f. Click the "Deploy" button to deploy the contract to thEthereum network.  
-	g. Interact with the deployed contract by calling itfunctions and observing its state.  
-		- make sure that when you call functions like PayAndGuess that require  ETH, you enter an amount in the Value box and change the currency to ETH.  
+
+	g. Interact with the deployed contract by calling it functions and observing its state. 
+	
+	Make sure that when you call functions like `PayAndGuess` that require  ETH, you enter an amount in the Value box and change the currency to ETH.  
 
 4. Submit the modified smart contract code and a brief explanation your changes and how they work.
