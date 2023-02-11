@@ -43,4 +43,4 @@ In this assignment, you will be given the task of either changing or adding a fu
 	
 	Make sure that when you call functions like `PayAndGuess` that require  ETH, you enter an amount in the Value box and change the currency to ETH.  
 
-4. Submit a link to the deployed contract on the Goerli testnetwork. To do this use the metamask EVM on remix instead of teh default. Also make sure you have ETH from the goerli faucet. Before you deploy check that you currently using the goerli testnest in your metamask.
+4. Submit a link to the deployed contract on the Goerli testnetwork. To do this use the metamask EVM on remix to deploy your contract. Also make sure you have ETH from the goerli faucet. Before you deploy check that you currently using the goerli testnest in your metamask.
