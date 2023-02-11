@@ -43,4 +43,4 @@ In this assignment, you will be given the task of either changing or adding a fu
 	
 	Make sure that when you call functions like `PayAndGuess` that require  ETH, you enter an amount in the Value box and change the currency to ETH.  
 
-4. Submit the modified smart contract code and a brief explanation your changes and how they work.
+4. Submit a link to the deployed contract on the Goerli testnetwork.
