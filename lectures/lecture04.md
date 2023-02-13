@@ -52,6 +52,26 @@ The advent of cryptocurrencies has paved the way for the development of tokenize
 
 ## FOSS Organizational Model
 
+Open source projects are typically governed by a combination of technical and community processes. The goal of open source project governance is to ensure that the project remains transparent, collaborative, and sustainable over time.
+
+A standard open source project governance structure usually includes the following components:
+
+Core Team: This is a group of individuals who have significant contributions to the project and are responsible for driving the project forward. The core team is responsible for making decisions on technical direction, prioritizing work, and managing the overall health of the project.
+
+Code of Conduct: This is a set of guidelines that outline the expectations for behavior within the project community. The code of conduct helps to create a positive and inclusive environment for contributors and users.
+
+Contributor Guidelines: This document outlines how individuals can contribute to the project, including the process for submitting changes, code review, and testing procedures.
+
+Decision-Making Process: This outlines how decisions are made within the project. This could be through a voting system, a consensus-based approach, or a combination of both.
+
+Issue Tracking System: This is a tool used to track and manage bugs, feature requests, and other issues within the project. It allows contributors to collaborate and prioritize work.
+
+Communication Channels: This includes forums, mailing lists, chat rooms, and other platforms for communication within the project community.
+
+The core team in an open source project typically plays a key role in ensuring that the project runs smoothly and that decisions are made in the best interest of the project and its community. The core team is responsible for maintaining the project's technical infrastructure, engaging with the community, and making decisions on the project's direction.
+
+For the purposes of this project we will assume the following model:
+
 <p align="center">
   <img src="./Project_onion.png" width="700">
 </p>
