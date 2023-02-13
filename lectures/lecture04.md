@@ -1,4 +1,6 @@
-# Introduction
+# Lecture 4 -- Project Overview and Design
+
+## Introduction
 
 Crowdfunding has a rich history, dating back to the Free Software initiative of the late 1980s and early 1990s. This movement sought to promote the sharing and collaboration of software code, with the goal of making software accessible to everyone, regardless of their financial means. In 1997, the Free and Open Source [(FOSS)](https://www.gnu.org/philosophy/floss-and-foss.en.html) software project, VIM, adopted a charitable funding approach, which allowed users to donate money to support the development of the software. This was one of the earliest examples of crowdfunding in practice.
 
@@ -8,7 +10,7 @@ In recent years, the rise of decentralized cryptocurrencies has created new poss
 
 In conclusion, crowdfunding has come a long way since its beginnings in the Free Software initiative. Today, there are a multitude of options for people looking to raise funds, from traditional crowdfunding platforms to decentralized offerings in the crypto world. The evolution of crowdfunding has opened up new opportunities for people to bring their ideas to life, and it continues to be a dynamic and rapidly growing field.
 
-# History
+## History
 
 Cryptocurrency and open source software funding have similar roots in that they both rely on decentralized communities and rely on contributions from individuals to sustain and grow their projects. However, there are some key differences between the two that are worth exploring.
 
@@ -20,17 +22,17 @@ Another difference is that open source software funding is often more transparen
 
 While cryptocurrency and open source funding share some similarities, they also have key differences in terms of how funding is obtained, the motivations of contributors, and the transparency and accountability of the projects themselves.
 
-# Decentralized Autonomous Organizations
+## Decentralized Autonomous Organizations
 
-# Tokenization
+## Tokenization
 
-# Smart Contract Funding
+## Smart Contract Funding
 
-# FOSS Organizational Model
+## FOSS Organizational Model
 
-[Project Organization](../../docs/drawings/Project_onion.png)
+![Project Organization](../../docs/drawings/Project_onion.png)
 
-# Project Design
+## Project Design
 
 [FOSS](../../docs/drawings/FOSS_model.png)
 
