@@ -78,7 +78,17 @@ For the purposes of this project we will assume the following model:
 
 ## Project Design
 
-[FOSS](../../docs/drawings/FOSS_model.png)
+<p align="center">
+  <img src="./crowd_funded_lending_contract_model.png"
+</p>
+
+<p align="center">
+  <img src="./FOSS_model.png" width="700">
+</p>
+
+<p align="center">
+  <img src="./crowd_funded_lending_contract_model.png width="700">
+</p>
 
 <p align="center">
   <img src="./Numeraire_fog_meter.png" width="700">
