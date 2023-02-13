@@ -24,7 +24,29 @@ While cryptocurrency and open source funding share some similarities, they also 
 
 ## Decentralized Autonomous Organizations
 
+The concept of decentralized autonomous organizations (DAOs) can be traced back to the publication of the white paper for the cryptocurrency, Ethereum, in 2013. Ethereum was designed to be a more advanced version of Bitcoin, with the added capability of creating decentralized applications (dApps) on its blockchain.
+
+A DAO operates via blockchain technology, and is run by a set of rules encoded as smart contracts. It allows for a decentralized, transparent, and tamper-proof way of managing an organization, as all transactions and decisions are recorded on the blockchain and executed automatically based on the predefined rules. Members of a DAO can participate in the decision-making process by voting on proposals, and the outcome is determined by a consensus of the members.
+
+The first DAO was created on the Ethereum blockchain in 2016, and it was quickly met with excitement and interest from the cryptocurrency community. However, this initial DAO was hacked, resulting in a loss of funds. This event led to a split in the Ethereum community, with some members choosing to hard fork the Ethereum blockchain to recover the lost funds, while others chose to maintain the original chain and its immutability.
+
+Despite this setback, the idea of DAOs has continued to evolve and gain popularity. Today, DAOs are used for a variety of purposes, including decentralized governance of open-source projects, investment funds, and community-driven organizations. Some DAOs have even been used to create decentralized versions of traditional corporations, allowing for decentralized decision-making and profit sharing.
+
+The history of decentralized autonomous organizations in the context of cryptocurrency is still in its early stages, but it has already shown promise as a way to create more transparent and democratic organizations that are not controlled by a single central authority.
+
 ## Tokenization
+
+The advent of cryptocurrencies has led to the development of tokenized economies and business models, which have the potential to disrupt traditional economic systems and bring about significant changes.
+
+Tokenized economies refer to the use of tokens, which are digital assets, to represent ownership or value within a specific ecosystem. These tokens can be traded on cryptocurrency exchanges and used as a means of exchange within the ecosystem. Tokenized economies can help to create more efficient and equitable systems, as they allow for direct ownership and transfer of assets without intermediaries.
+
+One example of a tokenized economy is the decentralized finance (DeFi) sector, which has seen explosive growth in recent years. DeFi refers to financial applications and services built on blockchain technology, and it enables users to access financial services without the need for traditional intermediaries such as banks. DeFi platforms use tokens to represent value, and they often have their own token economics, with supply and demand dynamics that drive their value.
+
+Another area where tokenized economies and business models are being developed is in the gaming industry. Some game developers are using tokens to represent in-game assets, allowing players to trade and exchange assets within the game. This creates new revenue streams for game developers, as they can sell tokens to players and take a cut of the trading fees.
+
+In the future, we can expect to see more tokenized economies and business models being developed in areas such as real estate, supply chain management, and even voting systems. The key benefits of tokenized economies include greater transparency, efficiency, and security, which will likely drive their adoption in a variety of industries.
+
+The advent of cryptocurrencies has paved the way for the development of tokenized economies and business models, which have the potential to bring about significant changes and improvements to traditional economic systems. 
 
 ## Smart Contract Funding
 
