@@ -1,4 +1,4 @@
-# Lecture 4 Project Overview and Design
+# Lecture 4: Project Overview and Design
 
 ## Introduction
 
