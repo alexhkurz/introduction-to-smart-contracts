@@ -1,6 +1,6 @@
 # Introduction
 
-Crowdfunding has a rich history, dating back to the Free Software initiative of the late 1980s and early 1990s. This movement sought to promote the sharing and collaboration of software code, with the goal of making software accessible to everyone, regardless of their financial means. In 1997, the Free and Open Source (FOSS)[https://www.gnu.org/philosophy/floss-and-foss.en.html] software project, VIM, adopted a charitable funding approach, which allowed users to donate money to support the development of the software. This was one of the earliest examples of crowdfunding in practice.
+Crowdfunding has a rich history, dating back to the Free Software initiative of the late 1980s and early 1990s. This movement sought to promote the sharing and collaboration of software code, with the goal of making software accessible to everyone, regardless of their financial means. In 1997, the Free and Open Source [(FOSS)](https://www.gnu.org/philosophy/floss-and-foss.en.html) software project, VIM, adopted a charitable funding approach, which allowed users to donate money to support the development of the software. This was one of the earliest examples of crowdfunding in practice.
 
 As the internet and technology advanced, crowdfunding evolved and expanded. In the early 2000s, platforms like Kickstarter and Indiegogo emerged, allowing artists, entrepreneurs, and innovators to raise funds for creative projects. These platforms revolutionized the way people could raise money, and they opened up new opportunities for people to bring their ideas to life.
 
@@ -28,11 +28,11 @@ While cryptocurrency and open source funding share some similarities, they also 
 
 # FOSS Organizational Model
 
-../../docs/drawings/Project_onion.png
+[Project Organization](../../docs/drawings/Project_onion.png)
 
 # Project Design
 
-(../../docs/drawings/FOSS_model.png)[FOSS]
+[FOSS](../../docs/drawings/FOSS_model.png)
 
 ../../docs/drawings/Numeraire_fog_meter.png
 
