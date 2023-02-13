@@ -76,14 +76,23 @@ For the purposes of this project we will assume the following model:
   <img src="./Project_onion.png" width="700">
 </p>
 
+FOSS projects are dependent on one another and can be representated via a dependency graph showing the relationship between different software components, including libraries and tools, that make up a software project. It shows how each component depends on others and helps to visualize the flow of data and control between components.
+
+In an open source software project, dependencies are libraries and tools that are used by the project but are not part of the project's core code. For example, a web application might depend on a library for handling HTTP requests, or a machine learning project might depend on a library for numerical computation.
+
+These dependencies can be managed using a package management system, which automates the process of downloading and installing dependencies. Package management systems also make it easier to keep dependencies up-to-date and resolve conflicts between dependencies.
+
+The most common package management system for open source software is "package.json" for Node.js projects and "requirements.txt" for Python projects. These systems allow developers to specify the dependencies for their project, and they handle the process of downloading and installing those dependencies on their local machine or in a production environment.
+
+A software dependency graph can help developers to understand the relationships between different components and make informed decisions about which dependencies to use. It also makes it easier to identify potential problems, such as conflicting dependencies or security vulnerabilities in a library.
+<p align="center">
+  <img src="./FOSS_model.png" width="700">
+</p>
+
 ## Project Design
 
 <p align="center">
   <img src="./crowd_funded_lending_contract_model.png"
-</p>
-
-<p align="center">
-  <img src="./FOSS_model.png" width="700">
 </p>
 
 <p align="center">
