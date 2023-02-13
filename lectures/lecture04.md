@@ -1,4 +1,4 @@
-# Lecture 4: Project Overview and Design
+# Lecture 4: Final Project Review
 
 ## Introduction
 
@@ -92,6 +92,11 @@ A software dependency graph can help developers to understand the relationships 
 
 ## Smart Contract Funding
 
+<p align="center">
+  <img src="./Open_source_dist_contracts_dep_graph.png" width="700">
+</p>
+
+
 ## Project Design
 
 <p align="center">
@@ -104,10 +109,6 @@ A software dependency graph can help developers to understand the relationships 
 
 <p align="center">
   <img src="./Numeraire_fog_meter.png" width="700">
-</p>
-
-<p align="center">
-  <img src="./Open_source_dist_contracts_dep_graph.png" width="700">
 </p>
 
 
