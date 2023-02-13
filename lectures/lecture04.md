@@ -36,8 +36,8 @@ While cryptocurrency and open source funding share some similarities, they also 
 
 [FOSS](../../docs/drawings/FOSS_model.png)
 
-<p>
-  <img src="./Numeraire_fog_meter.png" style="background-color: white" width="700" align="right">
+<p style="background-color: white">
+  <img src="./Numeraire_fog_meter.png" width="700" align="center">
 </p>
 
 ../../docs/drawings/Open_source_dist_contracts_dep_graph.png
