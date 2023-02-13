@@ -52,7 +52,9 @@ The advent of cryptocurrencies has paved the way for the development of tokenize
 
 ## FOSS Organizational Model
 
-![Project Organization](../../docs/drawings/Project_onion.png)
+<p align="center">
+  <img src="./Project_onion.png" width="700">
+</p>
 
 ## Project Design
 
@@ -62,7 +64,11 @@ The advent of cryptocurrencies has paved the way for the development of tokenize
   <img src="./Numeraire_fog_meter.png" width="700">
 </p>
 
-../../docs/drawings/Open_source_dist_contracts_dep_graph.png
+<p align="center">
+  <img src="./Open_source_dist_contracts_dep_graph.png" width="700">
+</p>
 
 
-../../docs/drawings/crowd_funded_lending_contract_model.png
+<p align="center">
+  <img src="./crowd_funded_lending_contract_model.png width="700">
+</p>
