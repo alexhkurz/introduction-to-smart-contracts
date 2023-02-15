@@ -29,17 +29,17 @@ In this assignment, you will be given the task of either changing or adding a fu
 
 	a. Go to [https://remix.ethereum.org/](https://remix.ethereuorg/)  
 
-	b. In the "File Explorer" section, use the default_workspaceclick the file button to create a new file in the contract tab and give it a name (e.g., "PayAndGuess.sol").  
+	b. In the "File explorer" tab, use the default_workspace, click the file button to create a new file in the contract tab and give it a name (e.g., "PayAndGuess.sol").  
 
 	c. Copy the modified smart contract code into the new file.  
 
-	d. Compile the smart contract in the Solidity Compiler tab.  
+	d. Compile the smart contract in the "Solidity compiler" tab.  
 
-	e. In the "Deploy & Run" tab, select "Remix VM London" undethe "Environment" section.  
+	e. In the "Deploy & run transactions" tab, select "Remix VM (London)" under the "Environment" section.  
 	
-	f. Click the "Deploy" button to deploy the contract to thEthereum network.  
+	f. Click the "Deploy" button to deploy the contract to the Ethereum network.  
 
-	g. Interact with the deployed contract by calling it functions and observing its state. 
+	g. Interact with the deployed contract by calling its functions and observing its state. 
 	
 	Make sure that when you call functions like `PayAndGuess` that require  ETH, you enter an amount in the Value box and change the currency to ETH.  
 
