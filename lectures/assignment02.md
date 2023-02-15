@@ -52,6 +52,6 @@ In this assignment, you will be given the task of either changing or adding a fu
 	- before you deploy check that you are currently using the Goerli testnest in Metamask; 
 	- deploy and receive an address for the contract transaction;
 	- click the "view on etherscan" link on the console;
-	- click on the link in "[Contract <link> Created]".
+	- submit the link.
 
 Ask on Discord if you have any questions.
