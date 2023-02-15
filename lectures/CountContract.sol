@@ -1,24 +1,24 @@
-import "forge-std/Test.sol";
-import "contracts/CountContract.sol";
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity ^0.8.4;
 
-contract ContractTest is Test {
-    CountContract countContract;
-    function setUp() public {
-        countContract = new CountContract(10);
-    }
+contract CountContract {
+  uint public count;
 
-    function testIncrement() public {
-        countContract.increment();
-        assertEq(countContract.count(), 11);
-    }
+  constructor (uint _count) {
+    count = _count;
+  }
 
-    function testDecrement() public {
-        countContract.decrement();
-        assertEq(countContract.count(), 9);
-    }
+  function setCount (uint _count) public {
+    count = _count;
+  }
 
-    function testSetCount() public {
-        countContract.setCount(20);
-        assertEq(countContract.count(), 20);
-    }
+  function increment() public {
+    count++;
+  }
+
+  function decrement() public {
+    count--;
+  }
+
+  
 }
