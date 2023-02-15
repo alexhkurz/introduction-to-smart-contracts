@@ -52,6 +52,16 @@ In this assignment, you will be given the task of either changing or adding a fu
 	- before you deploy check that you are currently using the Goerli testnest in Metamask; 
 	- deploy and receive an address for the contract transaction;
 	- click the "view on etherscan" link on the console;
-	- submit the link.
+	- submit the link;
+	- wait until the transaction is not pending anymore;
+	- click on the link in `[Contract <link> Created]` on the `goerli.etherscan.io` page you see when following the submitted link;
+	- click on the "Contract" tab with the green checkmark.
+
+	If at this point you see only byte code, follow the steps in the next item to make the source code available.
+
+5. Verify and Publish
+
+	- Click on "Verify and Publish" and follow the steps as indicated by the form.
+	- Make sure to pick up the correct version of the compiler from the Remix IDE.
 
 Ask on Discord if you have any questions.
