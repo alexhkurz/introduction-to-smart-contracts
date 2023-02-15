@@ -45,6 +45,13 @@ In this assignment, you will be given the task of either changing or adding a fu
 
 4. Submit a link to the deployed contract on the Goerli testnetwork. 
 
-	*Instructions for deployment:* Once you have finalized developing with the Remix VM enviorment, switch the enviorment to Injected Provider Metamask. Also make sure you have ETH from the goerli faucet. Here is the faucet link: https://goerlifaucet.com/. Before you deploy check that you currently using the goerli testnest in your metamask. Once you have done all this then you should be able to deploy and recieve an address for the contract transaction. Click on that to open etherscan and this is the link you will submit to canvas.
+	*Instructions for deployment:* Once you have finalized developing with the Remix VM environment, 
+	- make sure you have your Metamask wallet activated in the same browser in which you work on the Remix IDE;
+	- switch the Environment to "Injected Provider - MetaMask"; 
+	- make sure you have ETH from the goerli faucet (faucet link: https://goerlifaucet.com/);
+	- before you deploy check that you are currently using the Goerli testnest in Metamask; 
+	- deploy and receive an address for the contract transaction;
+	- click the "view on etherscan" link on the console;
+	- click on the link in "[Contract <link> Created]".
 
 Ask on Discord if you have any questions.
