@@ -27,7 +27,11 @@ Thirdly, blockchain technology offers a high degree of fault tolerance without t
 
 Lastly, blockchain technology offers a high degree of interoperability, which means that different blockchain-based systems can communicate with each other seamlessly. This interoperability enables the creation of a decentralized ecosystem, where multiple blockchain-based systems can work together to provide more value to users. In contrast, traditional fault-tolerant systems are often proprietary, making it difficult to integrate them with other systems.
 
-## The Blockchain Trilemna Conjecture 
+## Challenges & Opportunities
+
+There are many remaining problems to be solved as well as theoretical limitations to blockchain technology. These include the trilemna limitation, scaling, as well as fee models.
+
+### The Blockchain Trilemna Conjecture 
 
 Vitalik Buterin, the co-founder of Ethereum, introduced the concept of the "blockchain trilemma," which refers to the trade-off between three key attributes of a blockchain system: security, scalability, and decentralization. The blockchain trilemma highlights the fact that it is difficult, if not impossible, to achieve all three attributes simultaneously in a blockchain system, and that any improvement in one attribute may come at the cost of another.
 
@@ -39,8 +43,16 @@ Decentralization refers to the distribution of decision-making power among nodes
 
 The blockchain trilemma highlights the fact that it is challenging to achieve all three attributes simultaneously, and that any improvement in one attribute may come at the cost of another. For example, improving scalability by reducing the number of nodes can compromise decentralization, or increasing security by increasing computational power can compromise scalability. Thus, designers of blockchain systems must carefully consider the trade-offs between these attributes and choose the best balance for their specific use case.
 
-## Challenges & Opportunities
+### Scaling
 
+### Fee Models and Layer 2s
 
 ## Future Directions
 
+The crypto sector is so vibrant that it is difficult to list all of the opportunities. Here are a few:
+* Machine Learning on Immutable data
+* Quantum communciations and consensus
+* Zero knowledge systems extensions
+* Scaling systems using the above technologies
+* Improved interoperability
+* Hybridized traditional fault tolerance with byzantine approaches
