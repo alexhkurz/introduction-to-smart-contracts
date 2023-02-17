@@ -13,7 +13,7 @@ The concept of blockchain was introduced in 2008, with the publication of the Bi
 
 Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorithm used in the Bitcoin network. This algorithm uses proof-of-work to validate transactions, and once a block is added to the blockchain, it cannot be altered without invalidating the entire chain. This provides a high degree of fault tolerance, as the records on the blockchain are tamper-proof.
 
-<image align"=center" src="./bft_timeline.svg"></image>
+<img align"=center" src="./bft_timeline.svg"></img>
 
 In conclusion, the history of fault-tolerant computing can be traced from the development of Lamport clocks to the emergence of Nakamoto consensus. Each of these technologies provided a key development in the evolution of fault-tolerant computing, enabling systems to continue functioning even in the presence of failures. Today, fault tolerance is an essential feature of many critical systems, from distributed databases to financial networks, and the field of fault-tolerant computing continues to evolve and advance with new technologies and innovations.
 ## Advantages of Smart Contracts and Blockchains
