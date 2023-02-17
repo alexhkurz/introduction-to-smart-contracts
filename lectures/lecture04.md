@@ -45,8 +45,42 @@ The blockchain trilemma highlights the fact that it is challenging to achieve al
 
 ### Scaling
 
+There a number of techniques to improve the scalability of blockchains. These include sharding and virtual machine concurrency through new computer science techniques such as Rho calculus.
+
+Sharding is a technique that can help improve the scalability of blockchains by allowing for parallel processing of transactions.
+
+In a traditional blockchain system, all nodes on the network must process and validate every transaction. This means that as more transactions are added to the blockchain, the time it takes for each node to process and validate them increases, which can lead to slow transaction processing times and increased network congestion.
+
+Sharding addresses this issue by breaking up the blockchain into smaller subsets of nodes, called shards. Each shard is responsible for processing and validating a subset of the transactions on the network, rather than all of them.
+
+By partitioning the network in this way, each shard can operate independently and in parallel, processing transactions simultaneously with other shards. This allows for more transactions to be processed in a shorter amount of time, increasing the overall transaction throughput of the network.
+
+In addition to improving transaction processing times, sharding can also help reduce the storage requirements for nodes on the network. Since each node only needs to store a subset of the blockchain data, the overall storage requirements for the network can be significantly reduced.
+
+Overall, sharding is a promising technique for improving the scalability of blockchains and enabling them to support higher transaction volumes without sacrificing security or decentralization. However, it requires careful design and implementation to ensure that the shards are sufficiently secure and do not compromise the integrity of the network.
+
+Rho calculus is a process calculus that provides a mathematical framework for specifying and reasoning about concurrent and distributed systems. It is a formal language that allows the expression of computational processes as sets of independent and concurrently running processes, and supports communication and synchronization between these processes.
+
+In the context of blockchain virtual machines, Rho calculus can help scale the system by providing a more efficient way of executing smart contracts. Smart contracts are self-executing programs that run on the blockchain and can automatically enforce the rules and regulations of a transaction. They are an essential component of the blockchain, but they can also cause scalability issues due to their computational complexity and the need for coordination between multiple parties.
+
+Rho calculus can help address these issues by enabling parallel execution of smart contracts, which can greatly increase the throughput of the system. This is achieved by breaking down smart contracts into smaller independent processes that can execute concurrently, without the need for coordination or communication between them.
+
+In addition to parallel execution, Rho calculus also provides a mechanism for efficient message passing between processes, which can reduce the latency and overhead of communication between smart contracts. This can further improve the scalability of the system by allowing it to handle more transactions in a shorter amount of time.
+
+Overall, Rho calculus provides a powerful mathematical framework for specifying and reasoning about concurrent and distributed systems, and can help scale blockchain virtual machines by enabling efficient parallel execution and communication between smart contracts.
 ### Fee Models and Layer 2s
 
+In the context of Ethereum, the fee model is based on a concept called "Gas," which is the unit of computational work required to execute a transaction on the Ethereum network. Each transaction on the Ethereum network consumes a certain amount of Gas, which is proportional to the amount of computational work required to execute the transaction.
+
+The Gas fee is paid in Ether, the native cryptocurrency of the Ethereum network, and is used to compensate the network nodes that perform the computational work required to execute the transaction. The Gas fee is calculated by multiplying the Gas price, which is the amount of Ether paid per unit of Gas, by the amount of Gas required to execute the transaction. The Gas price is determined by the market, with users bidding to pay higher or lower fees to have their transactions processed more quickly or more slowly.
+
+The fee model for Ethereum has been a subject of debate, as it can make the system expensive to use, especially during periods of high network congestion. To address this issue, zero-knowledge systems, such as zk-SNARKs, have been proposed as a solution for scaling the Ethereum network.
+
+Zero-knowledge systems allow for the creation of private transactions, where the transaction data is encrypted and kept confidential, even from the network nodes. This means that the network nodes do not need to process the transaction data, reducing the amount of computational work required and therefore the amount of Gas required to execute the transaction.
+
+By using zero-knowledge systems, the amount of Gas required to execute a transaction can be reduced, making the transaction cheaper for the user. This can help to improve the scalability of the Ethereum network by reducing the burden on the network nodes, allowing more transactions to be processed in a given period.
+
+In addition to zero-knowledge systems, other solutions for scaling Ethereum have been proposed, including sharding, state channels, and layer-two protocols. These solutions aim to reduce the burden on the main Ethereum network by enabling transactions to be processed off-chain or by distributing the computational load across multiple sub-networks.
 ## Future Directions
 
 The crypto sector is so vibrant that it is difficult to list all of the opportunities. Here are a few:
