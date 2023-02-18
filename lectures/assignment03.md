@@ -1,4 +1,5 @@
-## Instructions
+## Assignment 3
+
 1. Write a `getCount()` function for `CountContract.sol`. This function should simply return the variable count.
 2. To test our function we will write a test also using the Solidity language. You will need to set the count to your desired number similar to the `testSetCount()` function. Also check if the function returns the correct value using `assertEq`. Reference the `testSetCount()` and remember to use `getCount()` instead of `count()`.
 3. Compile your contract using `npm run compile`. Debug as necessary.
