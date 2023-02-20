@@ -14,7 +14,7 @@ The concept of blockchain was introduced in 2008, with the publication of the Bi
 Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorithm used in the Bitcoin network. This algorithm uses proof-of-work to validate transactions, and once a block is added to the blockchain, it cannot be altered without invalidating the entire chain. This provides a high degree of fault tolerance, as the records on the blockchain are tamper-proof.
 
 <h5 style="text:italic" align="center"><em>
-<div align="center"><img src="/bft_timeline.png"></img></div>
+<div align="center"><img src="bft_timeline.png"></img></div>
 Note: the text for the milestones above are clickable. There are high level descriptions and original work available in the links. It is highly recommended that you view the last one, labeled "Nakamoto consensus," by Tim Roughgarden. He reviews a more detailed timeline in his talk.
 </em></h5>
 
