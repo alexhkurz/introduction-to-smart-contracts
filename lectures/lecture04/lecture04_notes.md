@@ -1,6 +1,7 @@
->>> *"Ethereum is a slow, expensive computer and that is an intentional design decision."* - Vitalik Buterin
+<h2 align="center"><em>"Ethereum is a slow, expensive computer and that is an intentional design decision."</em> - Vitalik Buterin</h2>
 
-## History of Fault Tolerant Computing
+## History of Fault Tolerance in Distributed Computing
+
 Fault-tolerant computing is a field of computer science that deals with the ability of computer systems to continue operating even in the presence of hardware or software failures. The history of fault-tolerant computing can be traced back to the 1970s, with the development of Lamport clocks, and has since evolved through several key technologies, including replication, consensus algorithms, and blockchain, culminating in the development of Nakamoto consensus.
 
 In the 1970s, Leslie Lamport introduced the concept of logical clocks, or Lamport clocks, which were used to establish the order of events in distributed systems. Lamport clocks provided a way for nodes in a distributed system to synchronize their clocks without the need for a central clock, which was prone to failure. This allowed distributed systems to continue operating even in the event of clock failures.
@@ -22,9 +23,11 @@ Blockchain development, including cryptocurrencies, are one of the most vibrant 
 
 ## Consensus
 
+All blockchains require a synchronized state, otherwise called consensus. 
+
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./Consensus.png"></img></div>
-This table outlines the major blockchain approaches to consensus. There is a slight divergence from researcher terminlogoy in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these approaches as well as preparing ourselves for future work in hybrid classical and quantum information theory approaches.
+This table outlines the major blockchain approaches to consensus. There is a slight divergence from researcher terminlogoy in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these approaches as well as preparing ourselves for future research in hybrid classical and quantum information theory approaches.
 </em></h5>
 
 ## Advantages of Smart Contracts and Blockchains
