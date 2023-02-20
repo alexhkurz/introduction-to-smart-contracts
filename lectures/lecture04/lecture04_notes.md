@@ -14,15 +14,18 @@ The concept of blockchain was introduced in 2008, with the publication of the Bi
 Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorithm used in the Bitcoin network. This algorithm uses proof-of-work to validate transactions, and once a block is added to the blockchain, it cannot be altered without invalidating the entire chain. This provides a high degree of fault tolerance, as the records on the blockchain are tamper-proof.
 
 <h5 style="text:italic" align="center"><em>
-<div align="center"><img src="lectures/lecture04/bft_timeline.png"></img></div>
-Note: the text for the milestones above are clickable. There are high level descriptions and original work available in the links. It is highly recommended that you view the last one, labeled "Nakamoto consensus," by Tim Roughgarden. He reviews a more detailed timeline in his talk.
+<div align="center"><img src="./bft_timeline.png"></img></div>
+Note: the text for the milestones above are clickable. There are high level descriptions and original work available in the links. It is highly recommended that you view the last one, labeled "Nakamoto consensus," by Tim Roughgarden. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
 </em></h5>
 
 Blockchain development, including cryptocurrencies, are one of the most vibrant areas in computer science and research. The sector has attracted a great deal of investment as well as talented individuals. Going forward, there a number of open questions still deserving more research and development work. These include integrating new consensus approaches, quantum information theory, as well as machine learning applications on blockchains.
 
 ## Consensus
 
+<h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./Consensus.png"></img></div>
+This table outlines the major blockchain approaches to consensus. There is a slight divergence from researcher terminlogoy in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these approaches as well as preparing ourselves for future work in hybrid classical and quantum information theory approaches.
+</em></h5>
 
 ## Advantages of Smart Contracts and Blockchains
 
