@@ -27,7 +27,7 @@ Blockchain development, including cryptocurrencies, are one of the most vibrant 
 
 All blockchains require a synchronized state, otherwise called consensus.  The early work in this areas was known as "state machine replication," and this preceded BFT-type and Nakamoto consensus by several decades (see Roughgarden's videos). Although, practical Byzantine Fault Tolerance was approximately a decade ahead of the invention of Nakamoto Consensus, it was not well recognized as a way to scalably solve the double spend problem. Many think this was due to the lack of anonymity provided by the approach. This is well articulated in the Roughgarden video at the end of this document.
 
-<caption style="text:italic" align="center" style="width:60%"><em>
+<caption style="text:italic" align="center" style="max-width: 60%"><em>
 This table outlines the major blockchain approaches to consensus. There is a slight divergence from researcher terminlogoy in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these approaches as well as preparing ourselves for future research in hybrid classical and quantum information theory as it applies to blockchain.
 </em><div align="center"><img src="./Consensus.png"></img></div></caption>
 
