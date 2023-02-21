@@ -27,9 +27,9 @@ Blockchain development, including cryptocurrencies, are one of the most vibrant 
 
 All blockchains require a synchronized state, otherwise called consensus.  The early work in this areas was known as "state machine replication," and this preceded BFT-type and Nakamoto consensus by several decades (see Roughgarden's videos). Although, practical Byzantine Fault Tolerance was approximately a decade ahead of the invention of Nakamoto Consensus, it was not well recognized as a way to scalably solve the double spend problem. Many think this was due to the lack of anonymity provided by the approach. This is well articulated in the Roughgarden video at the end of this document.
 
-<caption style="text:italic;text-align:center" align="center">
+<caption align="center"><em>
 This table outlines the major blockchain approaches to consensus. There is a slight divergence from researcher terminlogoy in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these approaches as well as preparing ourselves for future research in hybrid classical and quantum information theory as it applies to blockchain.
-<div align="center"><img src="./Consensus.png"></img></div></caption>
+<div align="center"><img src="./Consensus.png"></img></div></em></caption>
 
 The above diagram describes the core aspects of consensus and how it relates to the current cryptocurrency ecosystem.
 It does not cover the aspect of partial, asynchronous, and synchronous models in consensus. For a detailed discussion of this important aspect, [see: https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/](https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/). Instead, we focus on the three key aspects: the *Consensus Model*, *Sybil Resistance*, and *Finality*.
