@@ -40,6 +40,7 @@ The diagram also details where a number of popular cryptocurrencies fit into the
 
 ###  Sybil Resistance
 
+People in the crypto ecosystem oftent conflate "proof of work and stake" as a form of consensus when actuality the two methods are used for sybil resistance. The word Sybil in sybil resitance refers to a story about a schizophrenic patient in a (story from the 1970s)[].
 The next core aspect of consensus is the sybil resistance mechanism.
 
 ###  Finality
