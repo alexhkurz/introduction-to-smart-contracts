@@ -31,8 +31,19 @@ All blockchains require a synchronized state, otherwise called consensus.  The e
 This table outlines the major blockchain approaches to consensus. There is a slight divergence from researcher terminology in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these approaches as well as preparing ourselves for future research in hybrid classical and quantum information theory as it applies to blockchain.
 <div align="center"><img src="./Consensus.png"></img></div></em></caption>
 
-The above diagram describes the core aspects of consensus and how it relates to the current cryptocurrency ecosystem.
-It does not cover the aspect of partial, asynchronous, and synchronous models in consensus. For a detailed discussion of this important aspect, [see: Decentralized Thoughts Synchronous Models](https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/). Instead, we focus on the three key aspects: the *Consensus Model*, *Sybil Resistance*, and *Finality*.
+The above diagram describes the core aspects of consensus and how it relates to the current cryptocurrency ecosystem. These topics do not represent a comprehensive organizational list for consensus. Another significant area that can be covered is the aspect of partial, asynchronous, and synchronous models in consensus. For more detailed information on this [see: Decentralized Thoughts Synchronous Models](https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/). Instead, we focus on these three key aspects: the *Consensus Model*, *Sybil Resistance*, and *Finality*. 
+
+###  Consensus Models
+
+Consensus models
+
+###  Sybil Resistance
+
+The next core aspect of consensus is the sybil resistance mechanism.
+
+###  Finality
+
+The 
 
 ##  Smart Contracts and Blockchain
 
