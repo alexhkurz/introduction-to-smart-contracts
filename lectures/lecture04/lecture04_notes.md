@@ -17,7 +17,9 @@ Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorit
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./bft_timeline.png"></img></div>
 Note: If you have `git cloned` the above image locally the text for the milestones above are clickable. Otherwise, you may go to the end of this document to find them. These are high level descriptions and primary reference work available in the links. The last one, labeled "Nakamoto consensus," by Tim Roughgarden is highly recommended. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
-</em></h5> [Goto Visual References](visual-references)
+</em></h5> 
+
+[Goto Visual References](visual-references)
 
 Blockchain development, including cryptocurrencies, are one of the most vibrant areas in computer science and research. The sector has attracted a great deal of investment as well as talented individuals. Going forward, there a number of open questions still deserving more research and development work. These include integrating new consensus approaches, quantum information theory, as well as machine learning applications on blockchains. This document and visuals barely scratch the surface of the space. Future coursework could spend an entire semester on just this topic and the concept of consensus.
 
