@@ -16,7 +16,7 @@ Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorit
 
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./bft_timeline.png"></img></div>
-Note: If you have `git cloned` the above image locally the text for the milestones above are clickable. Otherwise, you may go to the end of this document to find them. These are high level descriptions and primary reference work available in the links. The last one, labeled "Nakamoto consensus," by Tim Roughgarden is highly recommended. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
+Note: If you have `git cloned` the above image locally the text for the milestones above are clickable. Otherwise, you may go to the end of this document to find them. There are high level descriptions and primary reference work available in the links. The last one, labeled "Nakamoto consensus," by Tim Roughgarden is highly recommended. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
 </em></h5> 
 
 [Goto Visual References](visual-references)
@@ -34,7 +34,7 @@ This table outlines the major blockchain approaches to consensus. There is a sli
 
 Partial, asynchronous, and synchronous models: https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/
 
-## Advantages of Smart Contracts and Blockchains
+##  Smart Contracts and Blockchain
 
 Decentralized computing offers a number of advantages over traditional centralized systems. Firstly, blockchain technology provides a high degree of transparency and immutability. Once data is recorded on the blockchain, it cannot be altered or deleted without the consensus of the network. This feature is particularly valuable for applications where data integrity is critical, such as financial transactions, supply chain management, or voting systems. With a traditional fault-tolerant system, data may be replicated across multiple nodes, but it is still possible for a node to be compromised, leading to the alteration or deletion of data. In contrast, blockchain technology provides an additional layer of security by making it difficult for an attacker to tamper with the data.
 
@@ -108,7 +108,7 @@ The crypto sector is so vibrant that it is difficult to list all of the opportun
 * Improved interoperability
 * Hybridized traditional fault tolerance with byzantine approaches
 
-## Visual References
+## visual references
 
 * Lamport Clocks: https://en.wikipedia.org/wiki/Lamport_timestamp
 * Merkle Trees: https://en.wikipedia.org/wiki/Merkle_tree
