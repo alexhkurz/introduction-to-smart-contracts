@@ -2,7 +2,7 @@
 
 ## History of Fault Tolerance in Distributed Computing
 
-Fault-tolerant computing is a field of computer science that deals with the ability of computer systems to continue operating even in the presence of hardware or software failures. The history of fault-tolerant computing can be traced back to the 1970s, with the development of Lamport clocks, and has since evolved through several key technologies, including replication, consensus algorithms, and blockchain, culminating in the development of Nakamoto consensus.
+Fault-tolerant computing is a field of computer science that deals with the ability of computer systems to continue operating even in the presence of hardware or software failures. The history of fault-tolerant computing can be traced back to the 1970s, with the development of Lamport clocks, and has since evolved through several key technologies, including replication, consensus algorithms, and blockchain, culminating in the development of Nakamoto consensus. These techniques are generally referred to Byzantine Fault Tolerance (or BFT).
 
 In the 1970s, Leslie Lamport introduced the concept of logical clocks, or Lamport clocks, which were used to establish the order of events in distributed systems. Lamport clocks provided a way for nodes in a distributed system to synchronize their clocks without the need for a central clock, which was prone to failure. This allowed distributed systems to continue operating even in the event of clock failures.
 
@@ -30,7 +30,7 @@ All blockchains require a synchronized state, otherwise called consensus.  The e
 >>> *This table outlines the major blockchain approaches to consensus. There is a slight divergence from research community terminology in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these as well as examining the requirements for future blockchain systems. In addtion, this classification layering should help prepare ourselves for future research in hybrid classical and quantum information theory as it applies to blockchain.*
 <div align="center"><img src="./Consensus.png"></img></div>
 
-The above diagram describes the core aspects of consensus and how it relates to the current cryptocurrency ecosystem. These topics do not represent a comprehensive organizational list for consensus. Another significant area that can be covered is the aspect of partial, asynchronous, and synchronous models in consensus. For more detailed information on this [see: Decentralized Thoughts Synchronous Models](https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/). Instead, we focus on these three key aspects: the *Consensus Model*, *Sybil Resistance*, and *Finality*. 
+The above diagram describes the core aspects of consensus and how it relates to the current cryptocurrency ecosystem. These topics do not represent a comprehensive organizational list for consensus. Safety, liveness in addition to partial, asynchronous, and synchronous models are other significant areas to review in the context of byzantine fault tolerance. The [FLP impossibility](#flp) in the references provides good context for the first two items while more detailed information on [synchronizationcan be found in Decentralized Thoughts Synchronous Models here](https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/). In this document, we will focus on these three key aspects: the *Consensus Model*, *Sybil Resistance*, and *Finality*. The other items will be left for another more theoretical discussion. 
 
 ###  Consensus Models
 
@@ -40,8 +40,9 @@ The diagram also details where a number of popular cryptocurrencies fit into the
 
 ###  Sybil Resistance
 
-People in the crypto ecosystem oftent conflate "proof of work and stake" as a form of consensus when actuality the two methods are used for sybil resistance. The word Sybil in sybil resitance refers to a story about a schizophrenic patient in a (story from the 1970s)[].
-The next core aspect of consensus is the sybil resistance mechanism.
+People in the crypto ecosystem oftent conflate "proof of work and stake" as a form of consensus when actuality the two methods are used for sybil resistance. The word Sybil in sybil resitance refers to a story about a multiple personaility disorder patient in a (story from the 1970s)[https://m.imdb.com/title/tt0075296/]. Modern day blockchains run without permission. This is one of the great advancements Nakamoto Consensus provided with Bitcoin. Up until this point, with state machine replication models such a p-BFT, the participating nodes on the network had to "know" one another. Prior to that advancement, fault tolerant networks used public key infrastructure (PKI) which required all parties (nodes) in the system to operate under those assumptions. As such, and with permissionless, systems a single node could have "multiple personalities." Thus, the term sybil resistance emerged.
+
+Sybil attacks occur where a single participant can act as though it is multiple nodes. Since modern blockchains to operate in permissionless ways, a simple attack vector on the networks is to either have mutliple votes, block proposals, or other consensus operations to dominate the network and determine who and how blocks are produced. The major present solution to this problem is stochastic or prestige proofs. Proof of work is always used with longest chain consensus since it operates in a completely permissionless setting. While prestige based proof of stake is generally used with BFT-type consensus. Both of these mechanisms mitigate against sybil attacks. Some blockchains use hybrid consensus models or longest chain and also use a prestige method for sybil resistance. These are highlighed in the diagram with the yellow line on the right side. There is some theorems and research that indicates a natural alignment between longest chain and stochastic proofs while also indicating that BFT-type models and prestige proofs are more congruent. (See [Roughgarden's foundations of Blockchain videos](https://youtube.com/playlist?list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA) for details).
 
 ###  Finality
 
@@ -129,7 +130,9 @@ The crypto sector is so vibrant that it is difficult to list all of the opportun
 * Merkle Trees: https://en.wikipedia.org/wiki/Merkle_tree
 * Byzantine General's Problem: https://lamport.azurewebsites.net/pubs/byz.pdf
 * Double Spend Problem & Blind Signatures: https://komodoplatform.com/en/academy/double-spending-problem/
+<a id="flp">
 * Safety, Liveness & Fault Tolerance: FLP Impossibilty https://www.youtube.com/watch?v=vJhm9uhd34E
+</a>
 * Blockchains: https://www.forbes.com/sites/vipinbharathan/2020/06/01/the-blockchain-was-born-20-years-before-bitcoin/?sh=7c7449515d71
 * Smart Contracts: https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html
 * Hash Cash Proof of Work: https://learn.saylor.org/mod/book/view.php?id=30735&chapterid=6706
