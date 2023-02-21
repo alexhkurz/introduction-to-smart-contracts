@@ -18,20 +18,21 @@ Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorit
 <div align="center"><img src="./bft_timeline.png"></img></div>
 Note: If you have `git cloned` the above image locally the text for the milestones above are clickable. Otherwise, you may go to the end of this document to find them. There are high level descriptions and primary reference work available in the links. The last one, labeled "Nakamoto consensus," by Tim Roughgarden is highly recommended. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
 </em></h5> 
->>> [Goto Visual References](#refs)
+[Goto Visual References](#refs)
 
 Blockchain development, including cryptocurrencies, are one of the most vibrant areas in computer science research. The sector has attracted a great deal of investment as well as talented individuals. Going forward, there a number of open questions still deserving more research and development work. These include integrating new consensus approaches, quantum information theory, as well as machine learning applications on blockchains. This document and visuals barely scratch the surface of the space. Future coursework could spend an entire semester on just this topic and the concept of consensus.
 
 ## Consensus
 
-All blockchains require a synchronized state, otherwise called consensus. 
+All blockchains require a synchronized state, otherwise called consensus.  The early work in this areas was known as "state machine replication," and this preceded BFT-type and Nakamoto consensus by several decades (see Roughgarden's videos). Although, practical Byzantine Fault Tolerance was approximately a decade ahead of the invention of Nakamoto Consensus, it was not well recognized as a way to scalably solve the double spend problem. Many think this was due to the lack of anonymity provided by the approach. This is well articulated in the Roughgarden video at the end of this document.
 
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./Consensus.png"></img></div>
 This table outlines the major blockchain approaches to consensus. There is a slight divergence from researcher terminlogoy in that it dissects "proof of work and stake" sybil resistance mechanisms into "stochastic" and "prestige" approaches. We differentiate between these approaches to allow for a better understanding of the strengths and weaknesses of these approaches as well as preparing ourselves for future research in hybrid classical and quantum information theory as it applies to blockchain.
 </em></h5>
 
-This diagram does not cover partial, asynchronous, and synchronous models. For a detailed discussion of this important aspect of consensus, [see: https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/](https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/). Instead, we focus on the three key aspects: the *Consensus Model*, *Sybil Resistance*, and *Finality*.
+The above diagram describes the core aspects of consensus and how it relates to the current cryptocurrency ecosystem.
+It does not cover the aspect of partial, asynchronous, and synchronous models in consensus. For a detailed discussion of this important aspect, [see: https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/](https://decentralizedthoughts.github.io/2019-06-01-2019-5-31-models/). Instead, we focus on the three key aspects: the *Consensus Model*, *Sybil Resistance*, and *Finality*.
 
 ##  Smart Contracts and Blockchain
 
