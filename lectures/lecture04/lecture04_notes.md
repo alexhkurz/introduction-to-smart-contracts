@@ -108,7 +108,7 @@ The crypto sector is so vibrant that it is difficult to list all of the opportun
 * Improved interoperability
 * Hybridized traditional fault tolerance with byzantine approaches
 
-## visual references
+## [visual references]
 
 * Lamport Clocks: https://en.wikipedia.org/wiki/Lamport_timestamp
 * Merkle Trees: https://en.wikipedia.org/wiki/Merkle_tree
