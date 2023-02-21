@@ -10,16 +10,16 @@ Replication was another key technology in the development of fault-tolerant comp
 
 Consensus algorithms were another key development in the evolution of fault-tolerant computing. These algorithms were designed to allow distributed systems to make decisions even in the presence of failures. In the 1990s, the Paxos algorithm was developed, which enabled a distributed system to reach consensus on a value even if some of the nodes failed. This enabled fault tolerance in systems where decisions needed to be made, such as in distributed databases.
 
-The concept of blockchain was introduced in 2008, with the publication of the Bitcoin whitepaper by Satoshi Nakamoto. Blockchain is a distributed ledger technology that provides a tamper-proof record of transactions. By using a consensus algorithm to validate transactions, blockchain provides a high degree of fault tolerance, as the records cannot be altered without the consensus of the network.
+The concept of blockchain was introduced in 1991, with the publication of the Bitcoin whitepaper by Satoshi Nakamoto. Blockchain is a distributed ledger technology that provides a tamper-proof record of transactions. By using a consensus algorithm to validate transactions, blockchain provides a high degree of fault tolerance, as the records cannot be altered without the consensus of the network.
 
 Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorithm used in the Bitcoin network. This algorithm uses proof-of-work to validate transactions, and once a block is added to the blockchain, it cannot be altered without invalidating the entire chain. This provides a high degree of fault tolerance, as the records on the blockchain are tamper-proof.
 
 <h5 style="text:italic" align="center"><em>
 <div align="center"><img src="./bft_timeline.png"></img></div>
-Note: the text for the milestones above are clickable. There are high level descriptions and original work available in the links. It is highly recommended that you view the last one, labeled "Nakamoto consensus," by Tim Roughgarden. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
+Note: If you have `git cloned` the above image locally the text for the milestones above are clickable. Otherwise, you may go to the end of this document to click them. These are high level descriptions and primary reference work available in the links. The last one, labeled "Nakamoto consensus," by Tim Roughgarden is highly recommended. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
 </em></h5>
 
-Blockchain development, including cryptocurrencies, are one of the most vibrant areas in computer science and research. The sector has attracted a great deal of investment as well as talented individuals. Going forward, there a number of open questions still deserving more research and development work. These include integrating new consensus approaches, quantum information theory, as well as machine learning applications on blockchains.
+Blockchain development, including cryptocurrencies, are one of the most vibrant areas in computer science and research. The sector has attracted a great deal of investment as well as talented individuals. Going forward, there a number of open questions still deserving more research and development work. These include integrating new consensus approaches, quantum information theory, as well as machine learning applications on blockchains. This document and visuals barely scratch the surface of the space. Future coursework could spend an entire semester on just this topic and the concept of consensus.
 
 ## Consensus
 
@@ -105,3 +105,19 @@ The crypto sector is so vibrant that it is difficult to list all of the opportun
 * Scaling systems using the above technologies
 * Improved interoperability
 * Hybridized traditional fault tolerance with byzantine approaches
+
+
+## References in Timeline Visual:
+
+Lamport Clocks: https://en.wikipedia.org/wiki/Lamport_timestamp
+Merkle Trees: https://en.wikipedia.org/wiki/Merkle_tree
+Byzantine General's Problem: https://lamport.azurewebsites.net/pubs/byz.pdf
+Double Spend Problem & Blind Signatures: https://komodoplatform.com/en/academy/double-spending-problem/
+Safety, Liveness & Fault Tolerance: FLP Impossibilty https://www.youtube.com/watch?v=vJhm9uhd34E
+Blockchains: https://www.forbes.com/sites/vipinbharathan/2020/06/01/the-blockchain-was-born-20-years-before-bitcoin/?sh=7c7449515d71
+Smart Contracts: https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html
+Hash Cash Proof of Work: https://learn.saylor.org/mod/book/view.php?id=30735&chapterid=6706
+bmoney: http://www.weidai.com/bmoney.txt
+Practical Byzantine Fault Tolerance: https://www.youtube.com/watch?v=IafgKJN3nwU
+Zero Knowledge Systems: https://www.youtube.com/watch?v=OcmvMs4AMbM
+Nakamot Consensus (this video covers a great deal more): https://www.youtube.com/watch?v=EfsSV7ni2ZM
