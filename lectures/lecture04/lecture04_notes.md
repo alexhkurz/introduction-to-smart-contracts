@@ -19,7 +19,7 @@ Nakamoto consensus, named after the creator of Bitcoin, is the consensus algorit
 Note: If you have `git cloned` the above image locally the text for the milestones above are clickable. Otherwise, you may go to the end of this document to find them. There are high level descriptions and primary reference work available in the links. The last one, labeled "Nakamoto consensus," by Tim Roughgarden is highly recommended. He reviews a more detailed timeline in his talk and will prepare your understanding for the consensus section below.
 </em></h5> 
 
-[Goto Visual References](#refs)
+[Goto References](#References)
 
 Blockchain development, including cryptocurrencies, are one of the most vibrant areas in computer science research. The sector has attracted a great deal of investment as well as talented individuals. Going forward, there a number of open questions still deserving more research and development work. These include integrating new consensus approaches, quantum information theory, as well as machine learning applications on blockchains. This document and visuals barely scratch the surface of the space. Future coursework could spend an entire semester on just this topic and the concept of consensus.
 
@@ -101,6 +101,8 @@ Rho calculus can help address these issues by enabling parallel execution of sma
 In addition to parallel execution, Rho calculus also provides a mechanism for efficient message passing between processes, which can reduce the latency and overhead of communication between smart contracts. This can further improve the scalability of the system by allowing it to handle more transactions in a shorter amount of time.
 
 Overall, Rho calculus provides a powerful mathematical framework for specifying and reasoning about concurrent and distributed systems, and can help scale blockchain virtual machines by enabling efficient parallel execution and communication between smart contracts.
+
+
 ### Fee Models and Layer 2s
 
 In the context of Ethereum, the fee model is based on a concept called "Gas," which is the unit of computational work required to execute a transaction on the Ethereum network. Each transaction on the Ethereum network consumes a certain amount of Gas, which is proportional to the amount of computational work required to execute the transaction.
@@ -118,27 +120,23 @@ In addition to zero-knowledge systems, other solutions for scaling Ethereum have
 
 The crypto sector is so vibrant that it is difficult to list all of the opportunities. Here are a few:
 * Machine Learning on Immutable data
-* Quantum communciations and consensus
+* Quantum communcations and consensus
 * Zero knowledge systems extensions
 * Scaling systems using the above technologies
 * Improved interoperability
 * Hybridized traditional fault tolerance with byzantine approaches
 
-<a id="refs">
-## Visual References
-</a>
+##  References
 
 * [Lamport Clocks: ](https://en.wikipedia.org/wiki/Lamport_timestamp)
 * [Merkle Trees: ](https://en.wikipedia.org/wiki/Merkle_tree)
 * [Byzantine General's Problem: ](https://lamport.azurewebsites.net/pubs/byz.pdf)
 * [Double Spend Problem & Blind Signatures: ](https://komodoplatform.com/en/academy/double-spending-problem/)
-<a id="flp">)
-* [Safety, Liveness & Fault Tolerance: ](FLP Impossibilty https://www.youtube.com/watch?v=vJhm9uhd34E)
-</a>)
+* [Safety, Liveness & Fault Tolerance: FLP Impossibilty](https://www.youtube.com/watch?v=vJhm9uhd34E)
 * [Blockchains: ](https://www.forbes.com/sites/vipinbharathan/2020/06/01/the-blockchain-was-born-20-years-before-bitcoin/?sh=7c7449515d71)
 * [Smart Contracts: ](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)
 * [Hash Cash Proof of Work: ](https://learn.saylor.org/mod/book/view.php?id=30735&chapterid=6706)
 * [bmoney: ](http://www.weidai.com/bmoney.txt)
 * [Practical Byzantine Fault Tolerance: ](https://www.youtube.com/watch?v=IafgKJN3nwU)
 * [Zero Knowledge Systems: ](https://www.youtube.com/watch?v=OcmvMs4AMbM)
-* [Nakamot Consensus (this video covers a great deal more): ](https://www.youtube.com/watch?v=EfsSV7ni2ZM)
+* [Nakamoto Consensus (this video covers a great deal more): ](https://www.youtube.com/watch?v=EfsSV7ni2ZM)
