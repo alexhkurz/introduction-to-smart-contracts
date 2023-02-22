@@ -118,23 +118,19 @@ In addition to zero-knowledge systems, other solutions for scaling Ethereum have
 
 The crypto sector is so vibrant that it is difficult to list all of the opportunities. Here are a few:
 * Machine Learning on Immutable data
-* Quantum communciations and consensus
+* Quantum communcations and consensus
 * Zero knowledge systems extensions
 * Scaling systems using the above technologies
 * Improved interoperability
 * Hybridized traditional fault tolerance with byzantine approaches
 
-## <a id="refs">
-Visual References
-</a>
+##  References
 
 * [Lamport Clocks: ](https://en.wikipedia.org/wiki/Lamport_timestamp)
 * [Merkle Trees: ](https://en.wikipedia.org/wiki/Merkle_tree)
 * [Byzantine General's Problem: ](https://lamport.azurewebsites.net/pubs/byz.pdf)
 * [Double Spend Problem & Blind Signatures: ](https://komodoplatform.com/en/academy/double-spending-problem/)
-<a id="flp">
 * [Safety, Liveness & Fault Tolerance: FLP Impossibilty](https://www.youtube.com/watch?v=vJhm9uhd34E)
-</a>
 * [Blockchains: ](https://www.forbes.com/sites/vipinbharathan/2020/06/01/the-blockchain-was-born-20-years-before-bitcoin/?sh=7c7449515d71)
 * [Smart Contracts: ](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)
 * [Hash Cash Proof of Work: ](https://learn.saylor.org/mod/book/view.php?id=30735&chapterid=6706)
