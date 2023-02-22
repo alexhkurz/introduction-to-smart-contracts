@@ -64,7 +64,7 @@ Lastly, blockchain technology offers a high degree of interoperability, which me
 
 There are many remaining problems to be solved as well as theoretical limitations to blockchain technology. These include the trilemna limitation, scaling, as well as fee models.
 
-### The Blockchain Trilemna Conjecture 
+### The Blockchain Trilemma Conjecture 
 
 Vitalik Buterin, the co-founder of Ethereum, introduced the concept of the "blockchain trilemma," which refers to the trade-off between three key attributes of a blockchain system: security, scalability, and decentralization. The blockchain trilemma highlights the fact that it is difficult, if not impossible, to achieve all three attributes simultaneously in a blockchain system, and that any improvement in one attribute may come at the cost of another.
 
