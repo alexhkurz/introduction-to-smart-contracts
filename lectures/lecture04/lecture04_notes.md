@@ -140,4 +140,5 @@ The crypto sector is so vibrant that it is difficult to list all of the opportun
 * [Practical Byzantine Fault Tolerance: ](https://www.youtube.com/watch?v=IafgKJN3nwU)
 * [Zero Knowledge Systems: ](https://www.youtube.com/watch?v=OcmvMs4AMbM)
 * [Nakamoto Consensus (this video covers a great deal more): ](https://www.youtube.com/watch?v=EfsSV7ni2ZM)
-* Tim Roughgarden's [Foundations of Blockchains](https://timroughgarden.github.io/fob21/) ... [Video Lecture Series](https://www.youtube.com/playlist?list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA) ... [BFT vs Longest Chain, Sized vs Unsized](https://www.youtube.com/watch?v=EfsSV7ni2ZM)
+* Joachim Neu: [The Why and How of PoS Ethereum's Consensus Problem](https://www.youtube.com/watch?v=2nMS-TK_tMw#t=7m10s)
+* Tim Roughgarden: [Foundations of Blockchains](https://timroughgarden.github.io/fob21/) ... [Video Lecture Series](https://www.youtube.com/playlist?list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA) ... [BFT vs Longest Chain, Sized vs Unsized](https://www.youtube.com/watch?v=EfsSV7ni2ZM)
