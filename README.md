@@ -81,5 +81,18 @@ npx hardhat --network <network_name> validateupgrade --contract <new_contract_na
 
 npx hardhat --network <network_name> deploy --contract <contract_name> --arg <constructor_argument> # Deploys given contract to specified network
 
-npx hardhat --network <network_name> verify <deployed_contract_address> # verifies source code on Etherscan or BSCSCAN. Supported networks are Goerli, BSC, BSC Testnet
+npx hardhat --network <network_name> verify <deployed_contract_address> <constructor_argument> # verifies source code on Etherscan or BSCSCAN. Supported networks are Goerli, BSC, BSC Testnet
 ```
+
+## Troubleshooting
+
+If you get an error similar to this:
+```
+[Error: ENOENT: no such file or directory, open 'C:\Users\<USER>\src\introduction-to-smart-contracts\artifacts\build-info\02c99f9d2dcfd295a0c0fe2cc9481c42.json'] {
+  errno: -4058,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: 'C:\\Users\\<USER>\\src\\introduction-to-smart-contracts\\artifacts\\build-info\\02c99f9d2dcfd295a0c0fe2cc9481c42.json'
+}
+```
+Then run: `npm run clean`
