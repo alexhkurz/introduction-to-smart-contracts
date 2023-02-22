@@ -124,8 +124,8 @@ The crypto sector is so vibrant that it is difficult to list all of the opportun
 * Improved interoperability
 * Hybridized traditional fault tolerance with byzantine approaches
 
-<a id="refs">
-## Visual References
+## <a id="refs">
+Visual References
 </a>
 
 * [Lamport Clocks: ](https://en.wikipedia.org/wiki/Lamport_timestamp)
