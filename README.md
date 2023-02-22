@@ -79,7 +79,7 @@ npx hardhat --network <network_name> initialize --contract <contract_name> --con
 
 npx hardhat --network <network_name> validateupgrade --contract <new_contract_name> --proxy-address <deployed_proxy_contract_address> # Validates new implementation contract without deploying it
 
-npx hardhat --network <network_name> deploy --contract <contract_name> # Deploys given contract to specified network
+npx hardhat --network <network_name> deploy --contract <contract_name> --arg <constructor_argument> # Deploys given contract to specified network
 
 npx hardhat --network <network_name> verify <deployed_contract_address> # verifies source code on Etherscan or BSCSCAN. Supported networks are Goerli, BSC, BSC Testnet
 ```
