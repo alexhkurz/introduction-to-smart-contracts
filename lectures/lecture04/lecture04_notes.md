@@ -128,19 +128,19 @@ The crypto sector is so vibrant that it is difficult to list all of the opportun
 
 ##  References
 
-* [Lamport Clocks: ](https://en.wikipedia.org/wiki/Lamport_timestamp)
-* [Merkle Trees: ](https://en.wikipedia.org/wiki/Merkle_tree)
-* [Byzantine General's Problem: ](https://lamport.azurewebsites.net/pubs/byz.pdf)
-* [Double Spend Problem & Blind Signatures: ](https://komodoplatform.com/en/academy/double-spending-problem/)
+* [Lamport Clocks](https://en.wikipedia.org/wiki/Lamport_timestamp)
+* [Merkle Trees](https://en.wikipedia.org/wiki/Merkle_tree)
+* [Byzantine General's Problem](https://lamport.azurewebsites.net/pubs/byz.pdf)
+* [Double Spend Problem & Blind Signatures](https://komodoplatform.com/en/academy/double-spending-problem/)
 * [Safety, Liveness & Fault Tolerance: FLP Impossibilty](https://www.youtube.com/watch?v=vJhm9uhd34E)
-* [Blockchains: ](https://www.forbes.com/sites/vipinbharathan/2020/06/01/the-blockchain-was-born-20-years-before-bitcoin/?sh=7c7449515d71)
-* [Smart Contracts: ](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)
-* [Hash Cash Proof of Work: ](https://learn.saylor.org/mod/book/view.php?id=30735&chapterid=6706)
-* [bmoney: ](http://www.weidai.com/bmoney.txt)
-* [Practical Byzantine Fault Tolerance: ](https://www.youtube.com/watch?v=IafgKJN3nwU)
-* [Zero Knowledge Systems: ](https://www.youtube.com/watch?v=OcmvMs4AMbM)
+* [Blockchains](https://www.forbes.com/sites/vipinbharathan/2020/06/01/the-blockchain-was-born-20-years-before-bitcoin/?sh=7c7449515d71)
+* [Smart Contracts](https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html)
+* [Hash Cash Proof of Work](https://learn.saylor.org/mod/book/view.php?id=30735&chapterid=6706)
+* [bmoney](http://www.weidai.com/bmoney.txt)
+* [Practical Byzantine Fault Tolerance](https://www.youtube.com/watch?v=IafgKJN3nwU)
+* [Zero Knowledge Systems](https://www.youtube.com/watch?v=OcmvMs4AMbM)
 * Joachim Neu: [The Why and How of PoS Ethereum's Consensus Problem](https://www.youtube.com/watch?v=2nMS-TK_tMw#t=7m10s)
 * Tim Roughgarden: 
     - [Foundations of Blockchains](https://timroughgarden.github.io/fob21/) 
     - [Video Lecture Series](https://www.youtube.com/playlist?list=PLEGCF-WLh2RLOHv_xUGLqRts_9JxrckiA) 
-    - [Nakamoto Consensus](https://www.youtube.com/watch?v=EfsSV7ni2ZM) this video covers a great deal more, BFT vs Longest Chain, Sized vs Unsized, etc
+    - [Nakamoto Consensus](https://www.youtube.com/watch?v=EfsSV7ni2ZM) (this video covers a great deal more, BFT vs Longest Chain, Sized vs Unsized, etc)
