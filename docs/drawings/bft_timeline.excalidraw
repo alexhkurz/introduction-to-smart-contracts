@@ -4,6 +4,42 @@
   "source": "https://excalidraw.com",
   "elements": [
     {
+      "type": "text",
+      "version": 305,
+      "versionNonce": 1789281612,
+      "isDeleted": false,
+      "id": "qf78huxOUvskewQkdcNID",
+      "fillStyle": "hachure",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 0,
+      "opacity": 100,
+      "angle": 0,
+      "x": 306.7181396484375,
+      "y": 541.3250732421875,
+      "strokeColor": "#5f3dc4",
+      "backgroundColor": "transparent",
+      "width": 303,
+      "height": 27,
+      "seed": 201133196,
+      "groupIds": [
+        "72k2nn-sBBNEA3w2sPmL9"
+      ],
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1676690707286,
+      "link": "https://lamport.azurewebsites.net/pubs/byz.pdf",
+      "locked": false,
+      "fontSize": 23.674880981445312,
+      "fontFamily": 2,
+      "text": "Byzantine Generals Problem",
+      "baseline": 22,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Byzantine Generals Problem"
+    },
+    {
       "type": "line",
       "version": 519,
       "versionNonce": 506860644,
@@ -23,7 +59,9 @@
       "height": 7.706114655377803,
       "seed": 1410377780,
       "groupIds": [],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667259007006,
       "link": null,
@@ -64,7 +102,9 @@
       "height": 54.51751708984375,
       "seed": 858410380,
       "groupIds": [],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667248872275,
       "link": null,
@@ -105,7 +145,7 @@
       "height": 43,
       "seed": 561460404,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667259077742,
       "link": null,
@@ -139,7 +179,7 @@
       "height": 32,
       "seed": 98644492,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248872275,
       "link": null,
@@ -175,7 +215,7 @@
       "groupIds": [
         "72k2nn-sBBNEA3w2sPmL9"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248872275,
       "link": null,
@@ -188,42 +228,6 @@
       "verticalAlign": "top",
       "containerId": null,
       "originalText": "Lamport, Shostack, Pease"
-    },
-    {
-      "type": "text",
-      "version": 303,
-      "versionNonce": 120473444,
-      "isDeleted": false,
-      "id": "qf78huxOUvskewQkdcNID",
-      "fillStyle": "hachure",
-      "strokeWidth": 2,
-      "strokeStyle": "solid",
-      "roughness": 0,
-      "opacity": 100,
-      "angle": 0,
-      "x": 306.7181396484375,
-      "y": 541.3250732421875,
-      "strokeColor": "#5f3dc4",
-      "backgroundColor": "transparent",
-      "width": 303,
-      "height": 27,
-      "seed": 201133196,
-      "groupIds": [
-        "72k2nn-sBBNEA3w2sPmL9"
-      ],
-      "strokeSharpness": "sharp",
-      "boundElements": [],
-      "updated": 1667248872275,
-      "link": null,
-      "locked": false,
-      "fontSize": 23.674880981445312,
-      "fontFamily": 2,
-      "text": "Byzantine Generals Problem",
-      "baseline": 22,
-      "textAlign": "left",
-      "verticalAlign": "top",
-      "containerId": null,
-      "originalText": "Byzantine Generals Problem"
     },
     {
       "type": "text",
@@ -245,7 +249,7 @@
       "height": 32,
       "seed": 2133498292,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248957686,
       "link": null,
@@ -279,7 +283,7 @@
       "height": 32,
       "seed": 577633332,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248872275,
       "link": null,
@@ -315,7 +319,7 @@
       "groupIds": [
         "CkYttF_eiUFfHXtxOXQf4"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248872275,
       "link": null,
@@ -331,8 +335,8 @@
     },
     {
       "type": "text",
-      "version": 454,
-      "versionNonce": 341890396,
+      "version": 455,
+      "versionNonce": 85647220,
       "isDeleted": false,
       "id": "KeLvFh0OVfA0zFB2F7oKB",
       "fillStyle": "hachure",
@@ -351,10 +355,10 @@
       "groupIds": [
         "CkYttF_eiUFfHXtxOXQf4"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667248872275,
-      "link": null,
+      "updated": 1676914381968,
+      "link": "https://komodoplatform.com/en/academy/double-spending-problem/",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -387,7 +391,9 @@
       "groupIds": [
         "VFJC9D_lM5DYqid1jqh3n"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667248971006,
       "link": null,
@@ -430,7 +436,7 @@
       "groupIds": [
         "VFJC9D_lM5DYqid1jqh3n"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248971006,
       "link": null,
@@ -466,7 +472,7 @@
       "groupIds": [
         "VFJC9D_lM5DYqid1jqh3n"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248971006,
       "link": null,
@@ -482,8 +488,8 @@
     },
     {
       "type": "text",
-      "version": 520,
-      "versionNonce": 564276700,
+      "version": 521,
+      "versionNonce": 2119219316,
       "isDeleted": false,
       "id": "NfjOLVo3e-jvjjVdM8lB5",
       "fillStyle": "hachure",
@@ -502,10 +508,10 @@
       "groupIds": [
         "VFJC9D_lM5DYqid1jqh3n"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667249199190,
-      "link": null,
+      "updated": 1676690763178,
+      "link": "https://www.fon.hum.uva.nl/rob/Courses/InformationInSpeech/CDROM/Literature/LOTwinterschool2006/szabo.best.vwh.net/smart_contracts_2.html",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -538,7 +544,7 @@
       "groupIds": [
         "9sHwBgbZAvlUWlz7G02LB"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667164823825,
       "link": null,
@@ -574,7 +580,9 @@
       "groupIds": [
         "9sHwBgbZAvlUWlz7G02LB"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667164823825,
       "link": null,
@@ -617,7 +625,7 @@
       "groupIds": [
         "9sHwBgbZAvlUWlz7G02LB"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667164823825,
       "link": null,
@@ -633,8 +641,8 @@
     },
     {
       "type": "text",
-      "version": 734,
-      "versionNonce": 806877156,
+      "version": 735,
+      "versionNonce": 455745740,
       "isDeleted": false,
       "id": "OZ9344e8h1cOpyXO5YsET",
       "fillStyle": "hachure",
@@ -653,10 +661,10 @@
       "groupIds": [
         "9sHwBgbZAvlUWlz7G02LB"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667249217539,
-      "link": null,
+      "updated": 1676914907185,
+      "link": "https://youtu.be/OcmvMs4AMbM",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -689,7 +697,9 @@
       "groupIds": [
         "0HoNv_oWytxIo8eXSwwzD"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667248957686,
       "link": null,
@@ -732,7 +742,9 @@
       "groupIds": [
         "0HoNv_oWytxIo8eXSwwzD"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667251098833,
       "link": null,
@@ -775,7 +787,9 @@
       "groupIds": [
         "0HoNv_oWytxIo8eXSwwzD"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667249176905,
       "link": null,
@@ -816,7 +830,7 @@
       "height": 23,
       "seed": 1660858252,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667249186000,
       "link": null,
@@ -832,8 +846,8 @@
     },
     {
       "type": "text",
-      "version": 667,
-      "versionNonce": 700860252,
+      "version": 668,
+      "versionNonce": 1366109044,
       "isDeleted": false,
       "id": "jlZIc5OIFX6987DSQwoao",
       "fillStyle": "hachure",
@@ -850,10 +864,10 @@
       "height": 54,
       "seed": 1749739404,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667249186000,
-      "link": null,
+      "updated": 1676914562947,
+      "link": "https://learn.saylor.org/mod/book/view.php?id=30735&chapterid=6706",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -884,7 +898,7 @@
       "height": 32,
       "seed": 684676748,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667174306859,
       "link": null,
@@ -918,7 +932,9 @@
       "height": 375.90887451171875,
       "seed": 1508184076,
       "groupIds": [],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667174529947,
       "link": null,
@@ -941,8 +957,8 @@
     },
     {
       "type": "text",
-      "version": 540,
-      "versionNonce": 1926379788,
+      "version": 541,
+      "versionNonce": 1023812596,
       "isDeleted": false,
       "id": "sI_aJ-RTNTAFNKCFixlCJ",
       "fillStyle": "hachure",
@@ -961,10 +977,10 @@
       "groupIds": [
         "6_mS_tTGlVTc5CYh3qCYh"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667174522545,
-      "link": null,
+      "updated": 1676914438329,
+      "link": "https://en.wikipedia.org/wiki/Lamport_timestamp",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -997,7 +1013,7 @@
       "groupIds": [
         "oK-eIbi6yo-WDzN4rqrL9"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667173442208,
       "link": null,
@@ -1034,7 +1050,9 @@
         "av2IJe5wpa8QwbGVo5JWE",
         "oK-eIbi6yo-WDzN4rqrL9"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667173442208,
       "link": null,
@@ -1078,7 +1096,9 @@
         "av2IJe5wpa8QwbGVo5JWE",
         "oK-eIbi6yo-WDzN4rqrL9"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667173442208,
       "link": null,
@@ -1122,7 +1142,9 @@
         "av2IJe5wpa8QwbGVo5JWE",
         "oK-eIbi6yo-WDzN4rqrL9"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667173442208,
       "link": null,
@@ -1166,7 +1188,7 @@
         "6bg6vcpnhNShPYTZV_FYI",
         "oK-eIbi6yo-WDzN4rqrL9"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667173442208,
       "link": null,
@@ -1182,8 +1204,8 @@
     },
     {
       "type": "text",
-      "version": 902,
-      "versionNonce": 668404700,
+      "version": 903,
+      "versionNonce": 1546863525,
       "isDeleted": false,
       "id": "qEc3FqnGbVaSA9WBzs9PP",
       "fillStyle": "hachure",
@@ -1203,10 +1225,10 @@
         "8oB2gj0_bI5emTl1RNgfZ",
         "oK-eIbi6yo-WDzN4rqrL9"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667258397996,
-      "link": null,
+      "updated": 1676690622082,
+      "link": "https://youtu.be/vJhm9uhd34E",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -1239,7 +1261,7 @@
       "groupIds": [
         "A9Puh4F0jo5jumpKLtrlK"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667173953058,
       "link": null,
@@ -1276,7 +1298,9 @@
         "nwCGu9tOu7_sdmiAAhjGL",
         "A9Puh4F0jo5jumpKLtrlK"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667173814778,
       "link": null,
@@ -1320,7 +1344,9 @@
         "nwCGu9tOu7_sdmiAAhjGL",
         "A9Puh4F0jo5jumpKLtrlK"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667173814778,
       "link": null,
@@ -1364,7 +1390,9 @@
         "nwCGu9tOu7_sdmiAAhjGL",
         "A9Puh4F0jo5jumpKLtrlK"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667173814778,
       "link": null,
@@ -1405,7 +1433,7 @@
       "height": 23,
       "seed": 1507303476,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667173884316,
       "link": null,
@@ -1421,8 +1449,8 @@
     },
     {
       "type": "text",
-      "version": 639,
-      "versionNonce": 2120992868,
+      "version": 640,
+      "versionNonce": 1595619532,
       "isDeleted": false,
       "id": "7vwGb5IukTKu_x545ZgM4",
       "fillStyle": "hachure",
@@ -1439,10 +1467,10 @@
       "height": 27,
       "seed": 531202228,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667249205079,
-      "link": null,
+      "updated": 1676914496370,
+      "link": "https://www.forbes.com/sites/vipinbharathan/2020/06/01/the-blockchain-was-born-20-years-before-bitcoin/?sh=7c7449515d71",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -1473,7 +1501,7 @@
       "height": 32,
       "seed": 1527414708,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667174404677,
       "link": null,
@@ -1509,7 +1537,9 @@
       "groupIds": [
         "s2tqwHPQudT1TIFxUKKNU"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667248891402,
       "link": null,
@@ -1556,7 +1586,9 @@
       "groupIds": [
         "s2tqwHPQudT1TIFxUKKNU"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667248900087,
       "link": null,
@@ -1599,7 +1631,9 @@
       "groupIds": [
         "s2tqwHPQudT1TIFxUKKNU"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667251080712,
       "link": null,
@@ -1642,7 +1676,7 @@
       "groupIds": [
         "BWga0Tn_AmKksRB3gUEAD"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667248933957,
       "link": null,
@@ -1658,8 +1692,8 @@
     },
     {
       "type": "text",
-      "version": 166,
-      "versionNonce": 444071524,
+      "version": 167,
+      "versionNonce": 778825716,
       "isDeleted": false,
       "id": "tL4mT1IHXDDXFcTBgvXFo",
       "fillStyle": "hachure",
@@ -1676,10 +1710,10 @@
       "height": 64,
       "seed": 2111453876,
       "groupIds": [],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667248933957,
-      "link": null,
+      "updated": 1676914624108,
+      "link": "https://en.wikipedia.org/wiki/Merkle_tree",
       "locked": false,
       "fontSize": 28,
       "fontFamily": 2,
@@ -1712,7 +1746,9 @@
       "groupIds": [
         "qC9mJ079pv0UkRBwl6Fal"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667175002866,
       "link": null,
@@ -1755,7 +1791,9 @@
       "groupIds": [
         "qC9mJ079pv0UkRBwl6Fal"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667259383205,
       "link": null,
@@ -1798,7 +1836,9 @@
       "groupIds": [
         "qC9mJ079pv0UkRBwl6Fal"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667259370308,
       "link": null,
@@ -1841,7 +1881,9 @@
       "groupIds": [
         "qC9mJ079pv0UkRBwl6Fal"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667259376038,
       "link": null,
@@ -1884,7 +1926,7 @@
       "groupIds": [
         "vfalUSQ3k2oPtwvjBA5L7"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667174985666,
       "link": null,
@@ -1920,7 +1962,9 @@
       "groupIds": [
         "K_i15feIcWmwpQgWng4kk"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667175044299,
       "link": null,
@@ -1963,7 +2007,7 @@
       "groupIds": [
         "_GO1EiNWKRJC6HdDPvyaN"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667175082190,
       "link": null,
@@ -1979,8 +2023,8 @@
     },
     {
       "type": "text",
-      "version": 891,
-      "versionNonce": 1927620788,
+      "version": 892,
+      "versionNonce": 703323212,
       "isDeleted": false,
       "id": "v1zK7627Y_hnLGnyc3OwB",
       "fillStyle": "hachure",
@@ -1999,10 +2043,10 @@
       "groupIds": [
         "7BLQKElRhJ1Z3tIJYHrma"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667175179850,
-      "link": null,
+      "updated": 1676914593278,
+      "link": "http://www.weidai.com/bmoney.txt",
       "locked": false,
       "fontSize": 23.674880981445312,
       "fontFamily": 2,
@@ -2036,7 +2080,9 @@
         "uxHGFgvwgrN9RsZvUaVPD",
         "t1mvF8SUcHHKooPdFtZA9"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667259399147,
       "link": null,
@@ -2080,7 +2126,7 @@
         "uxHGFgvwgrN9RsZvUaVPD",
         "t1mvF8SUcHHKooPdFtZA9"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667259399147,
       "link": null,
@@ -2118,7 +2164,7 @@
         "uxHGFgvwgrN9RsZvUaVPD",
         "t1mvF8SUcHHKooPdFtZA9"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667259409316,
       "link": null,
@@ -2156,7 +2202,7 @@
         "uxHGFgvwgrN9RsZvUaVPD",
         "t1mvF8SUcHHKooPdFtZA9"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667259409316,
       "link": null,
@@ -2171,74 +2217,74 @@
       "originalText": "Practical Byzantine\nFault Tolerance\n"
     },
     {
-      "id": "tN24T6i-O4kzu5ba9PEto",
       "type": "text",
-      "x": 1214.1047821044922,
-      "y": 580.4295994628906,
-      "width": 18,
-      "height": 41,
-      "angle": 0,
-      "strokeColor": "#ac2a20",
-      "backgroundColor": "transparent",
+      "version": 171,
+      "versionNonce": 741840228,
+      "isDeleted": false,
+      "id": "tN24T6i-O4kzu5ba9PEto",
       "fillStyle": "hachure",
       "strokeWidth": 1,
       "strokeStyle": "solid",
       "roughness": 1,
       "opacity": 100,
+      "angle": 0,
+      "x": 1214.1047821044922,
+      "y": 580.4295994628906,
+      "strokeColor": "#ac2a20",
+      "backgroundColor": "transparent",
+      "width": 18,
+      "height": 41,
+      "seed": 1375330524,
       "groupIds": [
         "t1mvF8SUcHHKooPdFtZA9"
       ],
-      "strokeSharpness": "sharp",
-      "seed": 1375330524,
-      "version": 171,
-      "versionNonce": 741840228,
-      "isDeleted": false,
-      "boundElements": null,
+      "roundness": null,
+      "boundElements": [],
       "updated": 1667259424066,
       "link": null,
       "locked": false,
-      "text": "†",
       "fontSize": 31.89146423339834,
       "fontFamily": 1,
+      "text": "†",
+      "baseline": 29,
       "textAlign": "left",
       "verticalAlign": "top",
-      "baseline": 29,
       "containerId": null,
       "originalText": "†"
     },
     {
-      "id": "px0whXMG6vhfuv1PNIkKY",
       "type": "text",
-      "x": 1140.1598358154297,
-      "y": 593.9474827636718,
-      "width": 79,
-      "height": 28,
-      "angle": 0,
-      "strokeColor": "#ac2a20",
-      "backgroundColor": "transparent",
+      "version": 136,
+      "versionNonce": 697441652,
+      "isDeleted": false,
+      "id": "px0whXMG6vhfuv1PNIkKY",
       "fillStyle": "hachure",
       "strokeWidth": 1,
       "strokeStyle": "solid",
       "roughness": 1,
       "opacity": 100,
+      "angle": 0,
+      "x": 1140.1598358154297,
+      "y": 593.9474827636718,
+      "strokeColor": "#ac2a20",
+      "backgroundColor": "transparent",
+      "width": 79,
+      "height": 28,
+      "seed": 808600028,
       "groupIds": [
         "t1mvF8SUcHHKooPdFtZA9"
       ],
-      "strokeSharpness": "sharp",
-      "seed": 808600028,
-      "version": 135,
-      "versionNonce": 79815388,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1667259424066,
-      "link": null,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1676914829942,
+      "link": "https://youtu.be/IafgKJN3nwU",
       "locked": false,
-      "text": "(pBFT)",
       "fontSize": 24.615826896067414,
       "fontFamily": 2,
+      "text": "(pBFT)",
+      "baseline": 23,
       "textAlign": "center",
       "verticalAlign": "top",
-      "baseline": 23,
       "containerId": null,
       "originalText": "(pBFT)"
     },
@@ -2264,7 +2310,9 @@
       "groupIds": [
         "vn5IHpjkd_pv7pYQV0ipT"
       ],
-      "strokeSharpness": "round",
+      "roundness": {
+        "type": 2
+      },
       "boundElements": [],
       "updated": 1667258995187,
       "link": null,
@@ -2307,7 +2355,7 @@
       "groupIds": [
         "vn5IHpjkd_pv7pYQV0ipT"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667258995187,
       "link": null,
@@ -2323,8 +2371,8 @@
     },
     {
       "type": "text",
-      "version": 530,
-      "versionNonce": 1138039268,
+      "version": 531,
+      "versionNonce": 1553816268,
       "isDeleted": false,
       "id": "B9Xh7X8MblHG-4_FrLwQC",
       "fillStyle": "hachure",
@@ -2344,10 +2392,10 @@
         "BYgKf_bwy0p-DVaSjoaQY",
         "vn5IHpjkd_pv7pYQV0ipT"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
-      "updated": 1667258995187,
-      "link": null,
+      "updated": 1676914986043,
+      "link": "https://youtu.be/EfsSV7ni2ZM",
       "locked": false,
       "fontSize": 22.09042991143445,
       "fontFamily": 2,
@@ -2381,7 +2429,7 @@
         "BYgKf_bwy0p-DVaSjoaQY",
         "vn5IHpjkd_pv7pYQV0ipT"
       ],
-      "strokeSharpness": "sharp",
+      "roundness": null,
       "boundElements": [],
       "updated": 1667258995187,
       "link": null,
@@ -2396,38 +2444,38 @@
       "originalText": "Nakamoto"
     },
     {
-      "id": "G3WRNXzNhJMCBINWnhiOb",
       "type": "text",
-      "x": 1604.3666229248047,
-      "y": 510.10098618164056,
-      "width": 22.501586914062507,
-      "height": 55.388521634615394,
-      "angle": 0,
-      "strokeColor": "#e67700",
-      "backgroundColor": "transparent",
+      "version": 250,
+      "versionNonce": 1029308043,
+      "isDeleted": false,
+      "id": "G3WRNXzNhJMCBINWnhiOb",
       "fillStyle": "hachure",
       "strokeWidth": 1,
       "strokeStyle": "solid",
       "roughness": 1,
       "opacity": 100,
+      "angle": 0,
+      "x": 1605.117416381836,
+      "y": 510.10098618164056,
+      "strokeColor": "#e67700",
+      "backgroundColor": "transparent",
+      "width": 21,
+      "height": 56,
+      "seed": 326026588,
       "groupIds": [
         "vn5IHpjkd_pv7pYQV0ipT"
       ],
-      "strokeSharpness": "sharp",
-      "seed": 326026588,
-      "version": 249,
-      "versionNonce": 1298152804,
-      "isDeleted": false,
-      "boundElements": null,
-      "updated": 1667258995187,
+      "roundness": null,
+      "boundElements": [],
+      "updated": 1676690615980,
       "link": null,
       "locked": false,
-      "text": "*",
       "fontSize": 48.46495643028848,
       "fontFamily": 2,
+      "text": "*",
+      "baseline": 45,
       "textAlign": "center",
       "verticalAlign": "top",
-      "baseline": 44.388521634615394,
       "containerId": null,
       "originalText": "*"
     }
