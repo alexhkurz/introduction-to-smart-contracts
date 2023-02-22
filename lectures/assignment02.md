@@ -25,22 +25,43 @@ In this assignment, you will be given the task of either changing or adding a fu
       
     c. Write your own or change an existing function.
       
-3. Develop, compile and deploy the contract to the Ethereum network using Remix Online IDE:   
+3. Develop, compile and deploy the contract in the Remix Online IDE:   
 
 	a. Go to [https://remix.ethereum.org/](https://remix.ethereuorg/)  
 
-	b. In the "File Explorer" section, use the default_workspaceclick the file button to create a new file in the contract tab and give it a name (e.g., "PayAndGuess.sol").  
+	b. In the "File explorer" tab, use the default_workspace, click the file button to create a new file in the contract tab and give it a name (e.g., "PayAndGuess.sol").  
 
 	c. Copy the modified smart contract code into the new file.  
 
-	d. Compile the smart contract in the Solidity Compiler tab.  
+	d. Compile the smart contract in the "Solidity compiler" tab.  
 
-	e. In the "Deploy & Run" tab, select "Remix VM London" undethe "Environment" section.  
+	e. In the "Deploy & run transactions" tab, select "Remix VM (London)" under the "Environment" section.  
 	
-	f. Click the "Deploy" button to deploy the contract to thEthereum network.  
+	f. Click the "Deploy" button to deploy the contract to the Ethereum network.  
 
-	g. Interact with the deployed contract by calling it functions and observing its state. 
+	g. Interact with the deployed contract by calling its functions and observing its state. 
 	
 	Make sure that when you call functions like `PayAndGuess` that require  ETH, you enter an amount in the Value box and change the currency to ETH.  
 
-4. Submit a link to the deployed contract on the Goerli testnetwork. Once you have finalized developing with the Remix VM enviorment, switch the enviorment to Injected Provider Metamask. Also make sure you have ETH from the goerli faucet. Here is the faucet link: https://goerlifaucet.com/. Before you deploy check that you currently using the goerli testnest in your metamask. Once you have done all this then you should be able to deploy and recieve an address for the contract transaction. Click on that to open etherscan and this is the link you will submit to canvas.
+4. Deployed the contract on the Goerli testnetwork. 
+
+	*Instructions for deployment:* Once you have finalized developing with the Remix VM environment, 
+	- make sure you have your Metamask wallet activated in the same browser in which you work on the Remix IDE;
+	- switch the Environment to "Injected Provider - MetaMask"; 
+	- make sure you have ETH from the Goerli faucet (faucet link: https://goerlifaucet.com/);
+	- before you deploy check that you are currently using the Goerli testnest in Metamask; 
+	- deploy and receive an address for the contract transaction;
+	- click the "view on etherscan" link on the console;
+	- (for the assignment, submit the link on Canvas);
+	- wait until the transaction is not pending anymore;
+	- click on the link in `[Contract <link> Created]`;
+	- click on the "Contract" tab with the green checkmark.
+
+	If at this point you see only byte code, follow the steps in the next item to make the source code available.
+
+5. Verify and Publish
+
+	- Click on "Verify and Publish" and follow the steps as indicated by the form.
+	- Make sure to pick up the correct version of the compiler from the Remix IDE.
+
+Ask on Discord if you have any questions.
