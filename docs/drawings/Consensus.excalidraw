@@ -520,8 +520,8 @@
     },
     {
       "type": "text",
-      "version": 691,
-      "versionNonce": 728453236,
+      "version": 705,
+      "versionNonce": 926888165,
       "isDeleted": false,
       "id": "fvJV_uChqIPySQaKOeqzr",
       "fillStyle": "solid",
@@ -542,17 +542,17 @@
       ],
       "roundness": null,
       "boundElements": [],
-      "updated": 1676920311703,
+      "updated": 1677276121310,
       "link": null,
       "locked": false,
       "fontSize": 21.40311625466417,
       "fontFamily": 1,
-      "text": "Fast via\nBlock proposer Membership\n (tautological)",
+      "text": "Fast & parsimonius via\nBlock proposer Membership\n (tautological)",
       "baseline": 73,
       "textAlign": "center",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "Fast via\nBlock proposer Membership\n (tautological)"
+      "originalText": "Fast & parsimonius via\nBlock proposer Membership\n (tautological)"
     },
     {
       "type": "text",
