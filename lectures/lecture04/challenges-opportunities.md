@@ -1,3 +1,13 @@
+##  Smart Contracts and Blockchain
+
+Decentralized computing offers a number of advantages over traditional centralized systems. Firstly, blockchain technology provides a high degree of transparency and immutability. Once data is recorded on the blockchain, it cannot be altered or deleted without the consensus of the network. This feature is particularly valuable for applications where data integrity is critical, such as financial transactions, supply chain management, or voting systems. With a traditional fault-tolerant system, data may be replicated across multiple nodes, but it is still possible for a node to be compromised, leading to the alteration or deletion of data. In contrast, blockchain technology provides an additional layer of security by making it difficult for an attacker to tamper with the data.
+
+Secondly, blockchain technology offers a decentralized architecture that enables peer-to-peer communication without the need for a central authority. In a traditional fault-tolerant system, there may be a single point of failure, such as a central server, that can bring down the entire system. With a blockchain-based system, there is no central authority, and the nodes work together to maintain the system. This architecture is more resilient to attacks, as it is more difficult to bring down the entire system.
+
+Thirdly, blockchain technology offers a high degree of fault tolerance without the need for complex consensus algorithms. In a traditional fault-tolerant system, achieving consensus can be challenging and often requires complex algorithms that are difficult to implement and maintain. In contrast, blockchain technology uses a simple but effective consensus algorithm, which ensures that all nodes in the network agree on the state of the system. This simplicity makes it easier to implement and maintain a fault-tolerant system based on blockchain technology.
+
+Lastly, blockchain technology offers a high degree of interoperability, which means that different blockchain-based systems can communicate with each other seamlessly. This interoperability enables the creation of a decentralized ecosystem, where multiple blockchain-based systems can work together to provide more value to users. In contrast, traditional fault-tolerant systems are often proprietary, making it difficult to integrate them with other systems. 
+
 ## Challenges & Opportunities
 
 There are many remaining problems to be solved as well as theoretical limitations to blockchain technology. These include the trilemna limitation, scaling, as well as fee models.

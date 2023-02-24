@@ -1,5 +1,7 @@
 # Lecture 5: Final Project Review
 
+(draft)
+
 ## Introduction
 
 Crowdfunding has a rich history, dating back to the Free Software initiative of the late 1980s and early 1990s. This movement sought to promote the sharing and collaboration of software code, with the goal of making software accessible to everyone, regardless of their financial means. In 1997, the Free and Open Source [(FOSS)](https://www.gnu.org/philosophy/floss-and-foss.en.html) software project, (VIM)(https://medium.com/@jovica/the-history-of-vim-b707758fb54f), adopted a charitable funding approach, which allowed users to donate money to support the development of the software. This was one of the earliest examples of crowdfunding in practice.
