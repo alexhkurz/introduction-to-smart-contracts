@@ -9,8 +9,8 @@
 	- Next you must go to [alchemy](https://www.alchemy.com/) which you signed up for when getting test ETH from the faucet. Create an API key and paste it into the `ALCHEMY_API_KEY` line within the `.env` file.
 	- Finally create an account on [Etherscan](https://etherscan.io/). Then generate an API key using this account. Paste this into the `ETHERSCAN_API_KEY` variable of `.env`.
 - Now you can deploy and verify your contract all from the command line. To do this use the following commands:
-	1. `npx hardhat --network goerli deploy --contract <contract_name>`  
-	2. `npx hardhat --network goerli verify <deployed_contract_address>`  
+	1. `npx hardhat --network <network_name> deploy --contract <contract_name> --arg <constructor_argument>`  
+	2. `npx hardhat --network <network_name> verify <deployed_contract_address> <constructor_argument>`  
 	You might have to wait a couple minutes before you can verify the contract. Make sure to use the address you receive from the first command for the address to verify in the second command.
 - Search for you address on Goerli etherscan and try reading and writing the functions in your contract by connecting with MetaMask.
 - Either submit your contract address or the Goerli etherscan url of the contract address. 
