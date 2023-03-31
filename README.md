@@ -1,4 +1,4 @@
-# README
+# README test
 
 A course at Chapman University Spring 2023 as a section of CPSC 298, the Computer Science Colloquium, which offers one credit courses (one lecture per week) on a current topic of interest. The title of this section is
 
