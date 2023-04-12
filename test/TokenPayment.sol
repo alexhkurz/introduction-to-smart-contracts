@@ -51,9 +51,9 @@ contract TokenPaymentTest is Test {
 
     function testSuccessfulDeposit() public {
         vm.startPrank(address(8));
-        // token.transfer(token_payment_address, 5);
-				token_payment.approveToken(5);
-        token_payment.depositToken(5);
+        token.transfer(token_payment_address, 5);
+        // token_payment.approveToken(5);
+        // token_payment.depositToken(5);
 
         assertEq(token_payment.getTokenBalance(), 5);
         assertEq(token.balanceOf(address(8)), 45);
@@ -69,67 +69,91 @@ contract TokenPaymentTest is Test {
     //     token_payment.deposit{value: 0 ether}();
     // }
 
-    // function testSuccessfulWithdraw() public {
-    //     // supply contract with ether
-    //     vm.deal(address(1), 0.5 ether);
-    //     vm.prank(address(1));
-    //     token_payment.deposit{value: 0.5 ether}();
+    function testSuccessfulWithdraw() public {
+        // supply contract with tokens
+        vm.prank(address(8));
+        token.transfer(token_payment_address, 10);
 
-    //     vm.prank(owner);
-    //     token_payment.withdraw(0.4 ether, address(2));
-    //     assertEq(contractAddress.balance, 0.1 ether);
-    //     assertEq(address(2).balance, 0.4 ether);
-    // }
+        vm.startPrank(owner);
+        token_payment.approveToken(8);
+        token_payment.withdrawTokens(8, address(2));
+        assertEq(token_payment.getTokenBalance(), 2);
+        assertEq(token.balanceOf(address(2)), 8);
+        vm.stopPrank();
+    }
 
-    // function testNotOwnerWithdraw() public {
-    //     vm.prank(address(1));
-    //     vm.expectRevert("Ownable: caller is not the owner");
-    //     token_payment.withdraw(0.5 ether, address(2));
-    // }
+    function testNotOwnerWithdraw() public {
+        vm.prank(address(1));
+        vm.expectRevert("Ownable: caller is not the owner");
+        token_payment.withdrawTokens(5, address(2));
+    }
 
-    // function testWithdrawReceiverZeroAddress() public {
-    //     vm.prank(owner);
-    //     vm.expectRevert("TreasuryToken: receiver is zero address");
-    //     token_payment.withdraw(0.5 ether, address(0));
-    // }
+    function testWithdrawReceiverZeroAddress() public {
+        vm.prank(owner);
+        vm.expectRevert("TokenPayment: receiver is zero address");
+        token_payment.withdrawTokens(5, address(0));
+    }
 
-    // function testWithdrawInvalidAmount() public {
-    //     vm.prank(owner);
-    //     vm.expectRevert("TreasuryToken: Not enough balance to withdraw");
-    //     token_payment.withdraw(0.15 ether, address(1));
-    // }
+    function testWithdrawInvalidAmount() public {
+        // supply contract with tokens
+        vm.prank(address(8));
+        token.transfer(token_payment_address, 10);
 
-    // function testSuccessfulWithdrawAll() public {
-    //     // supply contract with ether
-    //     vm.deal(address(1), 0.8 ether);
-    //     vm.prank(address(1));
-    //     token_payment.deposit{value: 0.8 ether}();
-    //     assertEq(contractAddress.balance, 0.8 ether);
+        vm.prank(owner);
+        vm.expectRevert("TokenPayment: Not enough balance to withdraw");
+        token_payment.withdrawTokens(12, address(1));
+    }
 
-    //     vm.prank(owner);
-    //     token_payment.withdrawAll();
-    //     assertEq(contractAddress.balance, 0 ether);
-    //     assertEq(owner.balance, 0.8 ether);
-    // }
+    function testWithdrawUnapprovedAmount() public {
+        // supply contract with tokens
+        vm.prank(address(8));
+        token.transfer(token_payment_address, 10);
 
-    // function testNotOwnerWithdrawAll() public {
-    //     vm.prank(address(1));
-    //     vm.expectRevert("Ownable: caller is not the owner");
-    //     token_payment.withdrawAll();
-    // }
+        vm.prank(owner);
+        vm.expectRevert("ERC20: insufficient allowance");
+        token_payment.withdrawTokens(10, address(1));
+    }
 
-    // function testWithdrawAllNoBalance() public {
-    //     vm.prank(owner);
-    //     vm.expectRevert("token_payment: No balance to withdraw");
-    //     token_payment.withdrawAll();
-    // }
+    function testSuccessfulWithdrawAllTokens() public {
+        // supply contract with tokens
+        vm.prank(address(8));
+        token.transfer(token_payment_address, 21);
 
-    // function testGetBalance() public {
-    //     // supply contract with ether
-    //     vm.deal(address(1), 0.8 ether);
-    //     vm.prank(address(1));
-    //     token_payment.deposit{value: 0.8 ether}();
+        vm.startPrank(owner);
+        token_payment.approveToken(21);
+        token_payment.withdrawAllTokens();
+        assertEq(token_payment.getTokenBalance(), 0);
+        assertEq(token.balanceOf(address(owner)), 21);
+        vm.stopPrank();
+    }
 
-    //     assertEq(token_payment.getBalance(), 0.8 ether);
-    // }
+    function testNotOwnerWithdrawAllTokens() public {
+        vm.prank(address(1));
+        vm.expectRevert("Ownable: caller is not the owner");
+        token_payment.withdrawAllTokens();
+    }
+
+    function testWithdrawAllNoBalanceTokens() public {
+        vm.prank(owner);
+        vm.expectRevert("TokenPayment: No balance to withdraw");
+        token_payment.withdrawAllTokens();
+    }
+
+    function testWithdrawAllTokensUnapprovedAmount() public {
+        // supply contract with tokens
+        vm.prank(address(8));
+        token.transfer(token_payment_address, 30);
+
+        vm.prank(owner);
+        vm.expectRevert("ERC20: insufficient allowance");
+        token_payment.withdrawAllTokens();
+    }
+
+    function testGetTokenBalance() public {
+        // supply contract with tokens
+        vm.prank(address(8));
+        token.transfer(token_payment_address, 37);
+
+        assertEq(token_payment.getTokenBalance(), 37);
+    }
 }
