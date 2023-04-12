@@ -20,7 +20,6 @@ contract TokenPaymentTest is Test {
         token_address = address(token);
 
         assertEq(token.balanceOf(address(8)), 50);
-        // assertEq(token.allowance(address()))
         vm.stopPrank();
 
         owner = address(7);
@@ -51,9 +50,8 @@ contract TokenPaymentTest is Test {
 
     function testSuccessfulDeposit() public {
         vm.startPrank(address(8));
-        token.transfer(token_payment_address, 5);
-        // token_payment.approveToken(5);
-        // token_payment.depositToken(5);
+        token.approve(token_payment_address, 5);
+        token_payment.depositTokens(5);
 
         assertEq(token_payment.getTokenBalance(), 5);
         assertEq(token.balanceOf(address(8)), 45);
@@ -71,8 +69,10 @@ contract TokenPaymentTest is Test {
 
     function testSuccessfulWithdraw() public {
         // supply contract with tokens
-        vm.prank(address(8));
-        token.transfer(token_payment_address, 10);
+        vm.startPrank(address(8));
+        token.approve(token_payment_address, 10);
+        token_payment.depositTokens(10);
+        vm.stopPrank();
 
         vm.startPrank(owner);
         token_payment.approveToken(8);
@@ -96,8 +96,10 @@ contract TokenPaymentTest is Test {
 
     function testWithdrawInvalidAmount() public {
         // supply contract with tokens
-        vm.prank(address(8));
-        token.transfer(token_payment_address, 10);
+        vm.startPrank(address(8));
+        token.approve(token_payment_address, 10);
+        token_payment.depositTokens(10);
+        vm.stopPrank();
 
         vm.prank(owner);
         vm.expectRevert("TokenPayment: Not enough balance to withdraw");
@@ -106,8 +108,10 @@ contract TokenPaymentTest is Test {
 
     function testWithdrawUnapprovedAmount() public {
         // supply contract with tokens
-        vm.prank(address(8));
-        token.transfer(token_payment_address, 10);
+        vm.startPrank(address(8));
+        token.approve(token_payment_address, 10);
+        token_payment.depositTokens(10);
+        vm.stopPrank();
 
         vm.prank(owner);
         vm.expectRevert("ERC20: insufficient allowance");
@@ -116,8 +120,10 @@ contract TokenPaymentTest is Test {
 
     function testSuccessfulWithdrawAllTokens() public {
         // supply contract with tokens
-        vm.prank(address(8));
-        token.transfer(token_payment_address, 21);
+        vm.startPrank(address(8));
+        token.approve(token_payment_address, 21);
+        token_payment.depositTokens(21);
+        vm.stopPrank();
 
         vm.startPrank(owner);
         token_payment.approveToken(21);
@@ -141,8 +147,10 @@ contract TokenPaymentTest is Test {
 
     function testWithdrawAllTokensUnapprovedAmount() public {
         // supply contract with tokens
-        vm.prank(address(8));
-        token.transfer(token_payment_address, 30);
+        vm.startPrank(address(8));
+        token.approve(token_payment_address, 30);
+        token_payment.depositTokens(30);
+        vm.stopPrank();
 
         vm.prank(owner);
         vm.expectRevert("ERC20: insufficient allowance");
@@ -151,8 +159,10 @@ contract TokenPaymentTest is Test {
 
     function testGetTokenBalance() public {
         // supply contract with tokens
-        vm.prank(address(8));
-        token.transfer(token_payment_address, 37);
+        vm.startPrank(address(8));
+        token.approve(token_payment_address, 37);
+        token_payment.depositTokens(37);
+        vm.stopPrank();
 
         assertEq(token_payment.getTokenBalance(), 37);
     }

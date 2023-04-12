@@ -18,23 +18,14 @@ contract TokenPayment is Ownable {
         token.approve(address(this), _amount);
     }
 
-    function depositToken(uint256 _amount) external {
-        token.transfer(address(this), _amount);
+    // Function to deposit tokens into the contract
+    function depositTokens(uint256 _amount) external {
+        token.transferFrom(msg.sender, address(this), _amount);
     }
 
     function getTokenBalance() public view returns (uint256) {
         return token.balanceOf(address(this));
     }
-
-    // Function to deposit tokens into the contract
-    // function depositTokens() external payable {
-    //     require(
-    //         msg.value > 0,
-    //         "TreasuryToken: Deposit amount should be greater than zero"
-    //     );
-
-    //     // The balance of the contract is automatically updated
-    // }
 
     // Function to withdraw tokens from the contract to specified address
     function withdrawTokens(
