@@ -7,7 +7,7 @@ import "openzeppelin-contracts/contracts/token/ERC20/IERC20.sol";
 /*
   By default, the owner of an Ownable contract is the account that deployed it.
 */
-contract TokenPayment is Ownable {
+contract TokenPayable is Ownable {
     IERC20 token;
 
     constructor(address _token) {
@@ -34,11 +34,11 @@ contract TokenPayment is Ownable {
     ) external onlyOwner {
         require(
             address(receiver) != address(0),
-            "TokenPayment: receiver is zero address"
+            "TokenPayable: receiver is zero address"
         );
         require(
             token.balanceOf(address(this)) >= amount,
-            "TokenPayment: Not enough balance to withdraw"
+            "TokenPayable: Not enough balance to withdraw"
         );
 
         bool transfer = token.transferFrom(address(this), receiver, amount);
@@ -48,7 +48,7 @@ contract TokenPayment is Ownable {
     // Function to allow the owner to withdraw the entire balance of tokens
     function withdrawAllTokens() external onlyOwner {
         uint256 balance = getTokenBalance();
-        require(balance > 0, "TokenPayment: No balance to withdraw");
+        require(balance > 0, "TokenPayable: No balance to withdraw");
 
         bool transfer = token.transferFrom(address(this), msg.sender, balance);
         require(transfer, "To payee: Failed to send payment");

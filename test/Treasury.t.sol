@@ -4,17 +4,24 @@ pragma solidity ^0.8.4;
 import "forge-std/Test.sol";
 import "forge-std/Vm.sol";
 import "contracts/Treasury.sol";
+import "contracts/Token.sol";
 
 contract TreasuryTest is Test {
+    Token private token;
     Treasury private treasury;
+
     address public owner;
     address public contractAddress;
+    address public token_address;
 
     function setUp() public {
+        token = new Token();
+        token_address = address(token);
+
         owner = address(7);
         vm.startPrank(owner);
 
-        treasury = new Treasury();
+        treasury = new Treasury(token_address);
         contractAddress = address(treasury);
 
         vm.stopPrank();
