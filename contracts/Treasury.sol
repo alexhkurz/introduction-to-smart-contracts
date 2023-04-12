@@ -51,6 +51,19 @@ contract Treasury is Ownable, TokenPayable {
     }
 
     // TokenPayable functions
-    // function depositTokens()
+    function depositToken(uint256 _amount) external {
+      super._depositToken(_amount);
+    }
+
+    function withdrawToken(
+        uint256 _amount,
+        address _receiver
+    ) external onlyOwner {
+      super._withdrawToken(_amount, _receiver);
+    }
+
+    function withdrawAllToken() public onlyOwner {
+      super._withdrawAllToken();
+    }
 
 }

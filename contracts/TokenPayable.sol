@@ -14,24 +14,24 @@ contract TokenPayable is Ownable {
         token = IERC20(_token);
     }
 
-    function approveToken(uint256 _amount) external onlyOwner {
+    function _approveToken(uint256 _amount) public onlyOwner {
         token.approve(address(this), _amount);
     }
 
     // Function to deposit tokens into the contract
-    function depositTokens(uint256 _amount) external {
+    function _depositToken(uint256 _amount) public {
         token.transferFrom(msg.sender, address(this), _amount);
     }
 
-    function getTokenBalance() public view returns (uint256) {
+    function _getTokenBalance() public view returns (uint256) {
         return token.balanceOf(address(this));
     }
 
     // Function to withdraw tokens from the contract to specified address
-    function withdrawTokens(
+    function _withdrawToken(
         uint256 amount,
         address receiver
-    ) external onlyOwner {
+    ) public onlyOwner {
         require(
             address(receiver) != address(0),
             "TokenPayable: receiver is zero address"
@@ -46,8 +46,8 @@ contract TokenPayable is Ownable {
     }
 
     // Function to allow the owner to withdraw the entire balance of tokens
-    function withdrawAllTokens() external onlyOwner {
-        uint256 balance = getTokenBalance();
+    function _withdrawAllToken() public onlyOwner {
+        uint256 balance = _getTokenBalance();
         require(balance > 0, "TokenPayable: No balance to withdraw");
 
         bool transfer = token.transferFrom(address(this), msg.sender, balance);
