@@ -1,6 +1,6 @@
 # Assignment 2: Modifying `PayAndGuess` 
 
-In this assignment, you will be given the task of either changing or adding a function to the `PayAndGuess0` smart contract. The goal of the assignment is to get you familiar with the basics of smart contract development and solidity programming.  
+In this assignment, you will be given the task of either changing or adding a function to the `PayAndGuess0` smart contract. The aim of the assignment is to get you started with smart contract development and Solidity programming.  
 
 ## Resources
 
