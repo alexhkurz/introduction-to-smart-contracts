@@ -42,6 +42,8 @@ npm run clean # runs hardhat clean
 npm run test # runs unit tests via Forge
 ```
 
+On some systems `npm run compile` raises an error [^error] that can be circumvented by running `nvm install 14`.
+
 ## Hardhat Tasks
 
 To deploy your contract use
@@ -96,3 +98,20 @@ If you get an error similar to this:
 }
 ```
 Then run: `npm run clean`
+
+[^error]: Error message occaionally seen after `npm run compile`:
+
+    ```
+    node_modules/hardhat/internal/cli/cli.js:129
+        let taskName = parsedTaskName ?? task_names_1.TASK_HELP;
+    
+    SyntaxError: Unexpected token '?'
+    at Object.compileFunction (vm.js:344:18)
+    at wrapSafe (internal/modules/cjs/loader.js:1048:15)
+    at Module._compile (internal/modules/cjs/loader.js:1082:27)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1138:10)
+    at Module.load (internal/modules/cjs/loader.js:982:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:875:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:71:12)
+    at internal/main/run_main_module.js:17:47
+    ```
