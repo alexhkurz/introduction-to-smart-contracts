@@ -1,9 +1,13 @@
-import { Head } from '$fresh/runtime.ts';
-import { useCallback, useEffect, useReducer, useState } from 'preact/hooks';
-import LayoutWrapper from '../components/LayoutWrapper.tsx';
-import { ActionType, StateType } from '../data/types.ts';
-import Counter from '../islands/Counter.tsx';
-import providerContext from '../lib/ProviderContext.ts';
+import { Head, Link } from 'aleph/react';
+import { ActionType, StateType } from '~/data/types.ts';
+import providerContext from '~/lib/ProviderContext.ts';
+import { useCallback, useEffect, useReducer } from 'react';
+
+const externalLinks = [
+  ['Get Started', 'https://alephjs.org/docs/get-started'],
+  ['Docs', 'https://alephjs.org/docs'],
+  ['Github', 'https://github.com/alephjs/aleph.js'],
+];
 
 const initialState: StateType = {
   provider: undefined,
@@ -39,7 +43,7 @@ function reducer(state: StateType, action: ActionType): StateType {
   }
 }
 
-export default function Home() {
+export default function Index() {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { provider, web3Provider, address, chainIdHex } = state;
   const web3Modal = providerContext.getModal();
@@ -125,37 +129,38 @@ export default function Home() {
   }, [provider, disconnect]);
 
   return (
-    <>
-      <LayoutWrapper>
-        <Head>
-          <title>Introduction to Smart Contracts</title>
-        </Head>
-        <div class="">
-          {/* <img
-          src="/logo.svg"
-          class="w-32 h-32"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        /> */}
-          {/* <Counter start={3} /> */}
-        </div>
+    <div className="screen index">
+      <Head>
+        <title>Introduction to Smart Contracts</title>
+        <meta name="description" content="Learning the decentralized way" />
+      </Head>
 
-        {web3Provider ? (
-          <div className="flex flex-col items-center bg-gray-600 mb-12 py-4 mx-20 my-20 rounded-xl">
-            Address:{' '}
-          </div>
-        ) : (
-          <div className="flex flex-col items-center pt-12">
+      {web3Provider ? (
+        <div className="flex flex-col items-center mb-12 py-4 mx-20 my-20 rounded-xl">
+          <h1 className="text-5xl text-center mt-4">Address: {address}</h1>
+          <div className="pt-20">
             <button
               className={
                 'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
               }
-              onClick={connect}
+              onClick={disconnect}
             >
-              Connect Wallet
+              Disconnect
             </button>
           </div>
-        )}
-      </LayoutWrapper>
-    </>
+        </div>
+      ) : (
+        <div className="flex flex-col items-center pt-12">
+          <button
+            className={
+              'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
+            }
+            onClick={connect}
+          >
+            Connect Wallet
+          </button>
+        </div>
+      )}
+    </div>
   );
 }

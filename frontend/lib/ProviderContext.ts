@@ -1,14 +1,14 @@
-import Web3Modal from 'web3modal';
-import { providers } from 'ethers';
-import { providerOptions } from './ProviderOptions.ts';
+import Web3Modal from "https://esm.sh/web3modal@1.9.12";
+import { providers } from "https://esm.sh/ethers@5.7.2";
+import { providerOptions } from "~/lib/ProviderOptions.ts";
 
 let web3Modal: Web3Modal;
-if (typeof window !== 'undefined') {
+if (typeof window !== "undefined" && typeof document !== "undefined") {
   web3Modal = new Web3Modal({
-    network: 'mainnet', // optional
+    network: "mainnet", // optional
     cacheProvider: true,
     providerOptions, // required
-    theme: 'dark',
+    theme: "dark",
   });
 }
 
@@ -25,7 +25,7 @@ async function getDefaultWeb3Provider() {
   // event listeners such as `.on()` will be different.
   const web3Provider = new providers.Web3Provider(
     await getDefaultProvider(),
-    'any'
+    "any"
   );
   return web3Provider;
 }
@@ -44,7 +44,7 @@ const providerContext = {
   getWeb3Provider: async () => {
     return await getDefaultWeb3Provider();
   },
-  getSigner: async () => {
+  getSigner: () => {
     return getDefaultSigner();
   },
   getAddress: async () => {

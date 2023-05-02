@@ -1,4 +1,4 @@
-import SectionContainer from './SectionContainer.tsx';
+import SectionContainer from '~/components/SectionContainer.tsx';
 
 export default function LayoutWrapper({ children }) {
   return (
