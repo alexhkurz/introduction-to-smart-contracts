@@ -1,13 +1,7 @@
 import { Head, Link } from 'aleph/react';
 import { ActionType, StateType } from '~/data/types.ts';
 import providerContext from '~/lib/ProviderContext.ts';
-import { useCallback, useEffect, useReducer } from 'react';
-
-const externalLinks = [
-  ['Get Started', 'https://alephjs.org/docs/get-started'],
-  ['Docs', 'https://alephjs.org/docs'],
-  ['Github', 'https://github.com/alephjs/aleph.js'],
-];
+import { useCallback, useEffect, useReducer, useState } from 'react';
 
 const initialState: StateType = {
   provider: undefined,
@@ -128,6 +122,24 @@ export default function Index() {
     }
   }, [provider, disconnect]);
 
+  const [contractAddress, setContractAddress] = useState('undefined');
+
+  useEffect(() => {
+    function getContractAddress() {
+      if (window.location) {
+        const url = new URL(window.location.href);
+        const searchParams = new URLSearchParams(url.search);
+        const handle = searchParams.get('contract');
+
+        if (handle) {
+          setContractAddress(handle);
+        }
+      }
+    }
+
+    getContractAddress();
+  }, []);
+
   return (
     <div className="screen index">
       <Head>
@@ -135,32 +147,36 @@ export default function Index() {
         <meta name="description" content="Learning the decentralized way" />
       </Head>
 
-      {web3Provider ? (
-        <div className="flex flex-col items-center mb-12 py-4 mx-20 my-20 rounded-xl">
-          <h1 className="text-5xl text-center mt-4">Address: {address}</h1>
-          <div className="pt-20">
+      <div className="flex flex-col items-center mb-12 py-4 mx-20 my-20 rounded-xl">
+        <p className="pb-20">Contract Address: {contractAddress}</p>
+
+        {web3Provider ? (
+          <>
+            <h1 className="text-5xl text-center mt-4">Address: {address}</h1>
+            <div className="pt-20">
+              <button
+                className={
+                  'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
+                }
+                onClick={disconnect}
+              >
+                Disconnect
+              </button>
+            </div>
+          </>
+        ) : (
+          <div className="flex flex-col items-center pt-12">
             <button
               className={
                 'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
               }
-              onClick={disconnect}
+              onClick={connect}
             >
-              Disconnect
+              Connect Wallet
             </button>
           </div>
-        </div>
-      ) : (
-        <div className="flex flex-col items-center pt-12">
-          <button
-            className={
-              'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
-            }
-            onClick={connect}
-          >
-            Connect Wallet
-          </button>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }
