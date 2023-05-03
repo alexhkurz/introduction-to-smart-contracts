@@ -1,0 +1,25 @@
+{
+  "imports": {
+    "~/": "./",
+    "std/": "https://deno.land/std@0.180.0/",
+    "aleph/": "https://deno.land/x/aleph@1.0.0-beta.43/",
+    "aleph/server": "https://deno.land/x/aleph@1.0.0-beta.43/server/mod.ts",
+    "aleph/dev": "https://deno.land/x/aleph@1.0.0-beta.43/server/dev.ts",
+    "aleph/plugins/deploy": "https://deno.land/x/aleph@1.0.0-beta.43/plugins/deploy.ts",
+    "aleph/plugins/unocss": "https://deno.land/x/aleph@1.0.0-beta.43/plugins/unocss.ts",
+    "aleph/react": "https://deno.land/x/aleph@1.0.0-beta.43/framework/react/mod.ts",
+    "aleph/plugins/react": "https://deno.land/x/aleph@1.0.0-beta.43/framework/react/plugin.ts",
+    "axios": "https://esm.sh/axios@1.4.0",
+    "ethers": "https://esm.sh/ethers@6.3.0",
+    "react": "https://esm.sh/v118/react@18.2.0",
+    "react-dom": "https://esm.sh/v118/react-dom@18.2.0",
+    "react-dom/": "https://esm.sh/v118/react-dom@18.2.0/",
+    "@unocss/core": "https://esm.sh/v113/@unocss/core@0.50.6",
+    "@unocss/preset-uno": "https://esm.sh/v113/@unocss/preset-uno@0.50.6",
+    "wagmi": "https://esm.sh/wagmi@0.12.12",
+    "wagmi/": "https://esm.sh/wagmi@0.12.12/",
+    "@web3modal/ethereum": "https://esm.sh/@web3modal/ethereum@2.3.7",
+    "@web3modal/react": "https://esm.sh/@web3modal/react@2.3.7"
+  },
+  "scopes": {}
+}
