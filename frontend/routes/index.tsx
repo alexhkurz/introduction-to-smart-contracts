@@ -2,6 +2,11 @@ import { Head, Link } from 'aleph/react';
 import { ActionType, StateType } from '~/data/types.ts';
 import providerContext from '~/lib/ProviderContext.ts';
 import { useCallback, useEffect, useReducer, useState } from 'react';
+import axios from 'axios';
+import { load } from 'std/dotenv/mod.ts';
+
+// const env = await load();
+// const ETHERSCAN_API_KEY = env['ETHERSCAN_API_KEY'];
 
 const initialState: StateType = {
   provider: undefined,
@@ -122,23 +127,37 @@ export default function Index() {
     }
   }, [provider, disconnect]);
 
-  const [contractAddress, setContractAddress] = useState('undefined');
+  const [contractAddress, setContractAddress] = useState('');
+  const [contractABI, setContractABI] = useState('');
 
   useEffect(() => {
     function getContractAddress() {
       if (window.location) {
         const url = new URL(window.location.href);
         const searchParams = new URLSearchParams(url.search);
-        const handle = searchParams.get('contract');
+        const address = searchParams.get('contract');
 
-        if (handle) {
-          setContractAddress(handle);
+        if (address) {
+          setContractAddress(address);
         }
       }
     }
 
     getContractAddress();
   }, []);
+
+  useEffect(() => {
+    async function getContractABI() {
+      if (contractAddress) {
+        const response = await axios.get(
+          `https://api-goerli.etherscan.io/api?module=contract&action=getabi&address=${contractAddress}&apikey=3B2CT17TRSKI5G28TTDGC7M4W44QREG72U`
+        );
+
+        setContractABI(response.data.result);
+      }
+    }
+    getContractABI();
+  }, [contractAddress]);
 
   return (
     <div className="screen index">
@@ -147,35 +166,50 @@ export default function Index() {
         <meta name="description" content="Learning the decentralized way" />
       </Head>
 
-      <div className="flex flex-col items-center mb-12 py-4 mx-20 my-20 rounded-xl">
-        <p className="pb-20">Contract Address: {contractAddress}</p>
+      <div className="flex flex-col items-center">
+        <p className="text-3xl text-red-500">Goerli Testnet Only</p>
+        <p className="text-xl pt-5">
+          Usage: Append URL to include "?contract=contract_address". Will
+          display contract ABI
+        </p>
+      </div>
 
-        {web3Provider ? (
-          <>
-            <h1 className="text-5xl text-center mt-4">Address: {address}</h1>
-            <div className="pt-20">
+      <div className="flex flex-col items-center mb-12 py-4 mx-20 rounded-xl">
+        <div className="pb-10">
+          {web3Provider ? (
+            <>
+              <h1 className="text-3xl text-center mt-4 pt-10">
+                {' '}
+                Connected Wallet Address: {address}
+              </h1>
+              <div className="pt-20">
+                <button
+                  className={
+                    'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
+                  }
+                  onClick={disconnect}
+                >
+                  Disconnect
+                </button>
+              </div>
+            </>
+          ) : (
+            <div className="flex flex-col items-center pt-12">
               <button
                 className={
                   'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
                 }
-                onClick={disconnect}
+                onClick={connect}
               >
-                Disconnect
+                Connect Wallet
               </button>
             </div>
-          </>
-        ) : (
-          <div className="flex flex-col items-center pt-12">
-            <button
-              className={
-                'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
-              }
-              onClick={connect}
-            >
-              Connect Wallet
-            </button>
-          </div>
-        )}
+          )}
+        </div>
+
+        <p className="pb-10 text-xl">Contract Address: {contractAddress}</p>
+        <p className="pb-10 text-xl">Contract ABI </p>
+        <p>{contractABI}</p>
       </div>
     </div>
   );
