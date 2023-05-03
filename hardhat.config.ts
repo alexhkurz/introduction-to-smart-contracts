@@ -55,17 +55,6 @@ module.exports = {
       chainId: 5,
       accounts: [process.env.GOERLI_PRIVATE_KEY],
     },
-    bscTestnet: {
-      url: 'https://data-seed-prebsc-1-s1.binance.org:8545',
-      chainId: 97,
-      accounts: [process.env.BNB_TESTNET_PRIVATE_KEY],
-    },
-    bsc: {
-      url: 'https://bsc-dataseed.binance.org/',
-      chainId: 56,
-      allowUnlimitedContractSize: true,
-      accounts: [process.env.BNB_MAINNET_PRIVATE_KEY],
-    },
     mordor: {
       url: 'https://www.ethercluster.com/mordor',
       chainId: 63,
