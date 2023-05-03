@@ -108,7 +108,8 @@ Then run: `npm run clean`
 Steps to deploy your own site to https://deno.com/deploy
 
 1. Go to https://deno.com/deploy and sign up/ sign in. Needs github access.
-2. Create new project and link specific github repo to project with entrypoint being `frontend/server.ts`. Choose automatic.
+2. Make sure your repo is uptodate with this one.
+3. Create new project and link your github repo to project with entrypoint being `frontend/server.ts`. Choose automatic.
 
 ### Installing Deno locally
 
