@@ -99,6 +99,26 @@ If you get an error similar to this:
 ```
 Then run: `npm run clean`
 
+## Deno and Aleph
+
+Deno installation:
+```
+https://deno.com/manual@v1.33.1/getting_started/installation
+```
+
+[Aleph.js](https://alephjs.org/)
+
+Run the webserver:
+
+```
+cd frontend
+deno task dev
+```
+
+---
+
+---
+
 [^error]: Error message occaionally seen after `npm run compile`:
 
     ```
