@@ -107,11 +107,11 @@ Then run: `npm run clean`
 
 Steps to deploy your own site to https://deno.com/deploy
 
-1. Go to https://deno.com/deploy and sign up/ sign in. Needs github access.
-2. Make sure your repo is uptodate with this one.
-3. Create new project and link your github repo to project with entrypoint being `frontend/server.ts`. Choose "automatic".
+1. Go to https://deno.com/deploy and sign up/sign in. Needs github access.
+2. Make sure your repo is uptodate with this one. In particular, it should contain the `frontend` folder.
+3. Create a new project and link your github repo to with entrypoint being `frontend/server.ts`. Choose "automatic".
 
-For the current repo, the new webpage is available [here](https://intro-smart-contracts.deno.dev/).
+The result of following these steps in the current repo is [here](https://intro-smart-contracts.deno.dev/).
 
 ### Installing Deno locally (not needed for the above)
 
