@@ -110,6 +110,8 @@ Steps to deploy your own site to https://deno.com/deploy
 1. Go to https://deno.com/deploy and sign up/ sign in. Needs github access.
 2. Make sure your repo is uptodate with this one.
 3. Create new project and link your github repo to project with entrypoint being `frontend/server.ts`. Choose automatic.
+4. Modify `frontend/sponsorship.ts` to include your contract address for goerli testnet. Contract must include `deposit` function found in `Treasury.sol`
+5. Push your changes to update published site
 
 ### Installing Deno locally
 
