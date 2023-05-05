@@ -1,8 +1,7 @@
 import { Head, Link } from 'aleph/react';
-import { ActionType, EventHandler, StateType } from '~/data/types.ts';
+import { ActionType, StateType } from '~/data/types.ts';
 import providerContext from '~/lib/ProviderContext.ts';
 import { useCallback, useEffect, useReducer, useState } from 'react';
-import axios from 'axios';
 import { load } from 'std/dotenv/mod.ts';
 import Form from '~/components/Form.tsx';
 import { ethers } from 'ethers';
@@ -129,51 +128,8 @@ export default function Index() {
     }
   }, [provider, disconnect]);
 
-  // const [contractAddress, setContractAddress] = useState('');
-  // const [contractABI, setContractABI] = useState('');
-  const [codeInput, setCodeInput] = useState('');
-
-  // useEffect(() => {
-  //   function getContractAddress() {
-  //     if (window.location) {
-  //       const url = new URL(window.location.href);
-  //       const searchParams = new URLSearchParams(url.search);
-  //       const address = searchParams.get('contract');
-
-  //       if (address) {
-  //         setContractAddress(address);
-  //       }
-  //     }
-  //   }
-
-  //   getContractAddress();
-  // }, []);
-
-  // useEffect(() => {
-  //   async function getContractABI() {
-  //     if (contractAddress) {
-  //       const response = await axios.get(
-  //         `https://api-goerli.etherscan.io/api?module=contract&action=getabi&address=${contractAddress}&apikey=3B2CT17TRSKI5G28TTDGC7M4W44QREG72U`
-  //       );
-
-  //       setContractABI(response.data.result);
-  //     }
-  //   }
-  //   getContractABI();
-  // }, [contractAddress]);
-
-  // useEffect(() => {
-  //   const keyDownHandler: any = async (event: EventHandler) => {
-  //     if (event.key === ('Enter' as unknown)) {
-  //       event.preventDefault();
-  //       await onSubmit(codeInput);
-  //     }
-  //   };
-  //   document.addEventListener('keydown', keyDownHandler);
-  //   return () => {
-  //     document.removeEventListener('keydown', keyDownHandler);
-  //   };
-  // }, [codeInput]);
+  const [sendAmount, setSendAmount] = useState('');
+  const [txHash, setTxHash] = useState('');
 
   return (
     <div className="screen index">
@@ -184,10 +140,6 @@ export default function Index() {
 
       <div className="flex flex-col items-center">
         <p className="text-3xl text-red-500">Goerli Testnet Only</p>
-        {/* <p className="text-xl pt-5">
-          Usage: Append URL to include "?contract=contract_address". Will
-          display contract ABI
-        </p> */}
       </div>
 
       <div className="flex flex-col items-center mb-12 py-4 mx-20 rounded-xl">
@@ -225,7 +177,7 @@ export default function Index() {
 
         <div className="flex flex-row items-center space-x-4 bg-gray-700 rounded-xl  p-4">
           <Form
-            setValue={setCodeInput}
+            setValue={setSendAmount}
             className="bg-gray-200 border-none rounded-md outline-none focus:ring-0 text-3xl"
             placeholder="0.001"
           />
@@ -234,7 +186,7 @@ export default function Index() {
               'text-md px-3 py-2 w-auto rounded-lg text-white bg-[#0095D4]'
             }
             onClick={async () => {
-              console.log(codeInput);
+              console.log(sendAmount);
               if (web3Provider) {
                 const abi = ['function deposit() external payable'];
 
@@ -251,12 +203,14 @@ export default function Index() {
                   const transactionResponse = await treasuryContract.deposit({
                     gasPrice: await web3Provider.getGasPrice(),
                     gasLimit: 140000,
-                    value: ethers.utils.parseEther("0.001"),
+                    value: ethers.utils.parseEther(sendAmount),
                   });
 
-                  // transaction.hash = transactionResponse.hash;
+                  // console.log(transactionResponse.hash);
+                  setTxHash(transactionResponse.hash);
+
                   const transactionReceipt = await transactionResponse.wait();
-                  console.log(transactionReceipt.logs);
+                  // console.log(transactionReceipt.logs);
                   if (transactionReceipt.status === 1) {
                     // transaction.success = true;
                   }
@@ -266,14 +220,17 @@ export default function Index() {
               }
             }}
           >
-            Donate
+            Send
           </button>
         </div>
         <p className="text-xl pt-4">In ETH</p>
-
-        {/* <p className="pb-10 text-xl">Contract Address: {contractAddress}</p>
-        <p className="pb-10 text-xl">Contract ABI </p>
-        <p>{contractABI}</p> */}
+        {txHash ? (
+          <>
+            <p className="pt-5">Transaction Hash: {txHash}</p>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
