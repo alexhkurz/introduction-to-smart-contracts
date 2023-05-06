@@ -2,8 +2,10 @@ import { Head, Link } from 'aleph/react';
 import { ActionType, StateType } from '~/data/types.ts';
 import providerContext from '~/lib/ProviderContext.ts';
 import { useCallback, useEffect, useReducer, useState } from 'react';
-import axios from 'axios';
 import { load } from 'std/dotenv/mod.ts';
+import Form from '~/components/Form.tsx';
+import { ethers } from 'ethers';
+import { config } from '~/sponsorship.ts';
 
 // const env = await load();
 // const ETHERSCAN_API_KEY = env['ETHERSCAN_API_KEY'];
@@ -127,37 +129,8 @@ export default function Index() {
     }
   }, [provider, disconnect]);
 
-  const [contractAddress, setContractAddress] = useState('');
-  const [contractABI, setContractABI] = useState('');
-
-  useEffect(() => {
-    function getContractAddress() {
-      if (window.location) {
-        const url = new URL(window.location.href);
-        const searchParams = new URLSearchParams(url.search);
-        const address = searchParams.get('contract');
-
-        if (address) {
-          setContractAddress(address);
-        }
-      }
-    }
-
-    getContractAddress();
-  }, []);
-
-  useEffect(() => {
-    async function getContractABI() {
-      if (contractAddress) {
-        const response = await axios.get(
-          `https://api-goerli.etherscan.io/api?module=contract&action=getabi&address=${contractAddress}&apikey=3B2CT17TRSKI5G28TTDGC7M4W44QREG72U`
-        );
-
-        setContractABI(response.data.result);
-      }
-    }
-    getContractABI();
-  }, [contractAddress]);
+  const [sendAmount, setSendAmount] = useState('');
+  const [txHash, setTxHash] = useState('');
 
   return (
     <div className="screen index">
@@ -168,48 +141,97 @@ export default function Index() {
 
       <div className="flex flex-col items-center">
         <p className="text-3xl text-red-500">Goerli Testnet Only</p>
-        <p className="text-xl pt-5">
-          Usage: Append URL to include "?contract=contract_address". Will
-          display contract ABI
-        </p>
       </div>
 
       <div className="flex flex-col items-center mb-12 py-4 mx-20 rounded-xl">
-        <div className="pb-10">
-          {web3Provider ? (
-            <>
-              <h1 className="text-3xl text-center mt-4 pt-10">
-                {' '}
-                Connected Wallet Address: {address}
-              </h1>
-              <div className="pt-20">
-                <button
-                  className={
-                    'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
-                  }
-                  onClick={disconnect}
-                >
-                  Disconnect
-                </button>
-              </div>
-            </>
-          ) : (
-            <div className="flex flex-col items-center pt-12">
+        {web3Provider ? (
+          <>
+            <h1 className="text-3xl text-center mt-4 pt-10">
+              {' '}
+              Connected Wallet Address: {address}
+            </h1>
+            <div className="py-10">
               <button
                 className={
                   'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
                 }
-                onClick={connect}
+                onClick={disconnect}
               >
-                Connect Wallet
+                Disconnect
               </button>
             </div>
-          )}
-        </div>
 
-        <p className="pb-10 text-xl">Contract Address: {contractAddress}</p>
-        <p className="pb-10 text-xl">Contract ABI </p>
-        <p>{contractABI}</p>
+            <div className="flex flex-row items-center space-x-4 bg-gray-700 rounded-xl  p-4">
+              <Form
+                setValue={setSendAmount}
+                className="bg-gray-200 border-none rounded-md outline-none focus:ring-0 text-3xl"
+                placeholder="0.001"
+              />
+              <button
+                className={
+                  'text-md px-3 py-2 w-auto rounded-lg text-white bg-[#0095D4]'
+                }
+                onClick={async () => {
+                  console.log(sendAmount);
+                  if (web3Provider) {
+                    const abi = ['function deposit() external payable'];
+
+                    const treasuryAddress = config.goerli_contract_address;
+                    const signer = web3Provider.getSigner();
+                    const treasuryContract = new ethers.Contract(
+                      treasuryAddress,
+                      abi,
+                      signer
+                    );
+
+                    try {
+                      const transactionResponse =
+                        await treasuryContract.deposit({
+                          gasPrice: await web3Provider.getGasPrice(),
+                          gasLimit: 140000,
+                          value: ethers.utils.parseEther(sendAmount),
+                        });
+
+                      // console.log(transactionResponse.hash);
+                      setTxHash(transactionResponse.hash);
+
+                      const transactionReceipt =
+                        await transactionResponse.wait();
+                      // console.log(transactionReceipt.logs);
+                      if (transactionReceipt.status === 1) {
+                        // transaction.success = true;
+                      }
+                    } catch (error: any) {
+                      console.log(error);
+                    }
+                  }
+                }}
+              >
+                Send
+              </button>
+            </div>
+            <p className="text-xl pt-4">In ETH</p>
+          </>
+        ) : (
+          <div className="flex flex-col items-center py-12">
+            <button
+              className={
+                'text-lg px-3 py-2 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
+              }
+              onClick={connect}
+            >
+              Connect Wallet
+            </button>
+          </div>
+        )}
+
+        {txHash ? (
+          <>
+            <p className="pt-5">Transaction Hash: {txHash}</p>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
     </div>
   );
