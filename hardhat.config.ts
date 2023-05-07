@@ -51,9 +51,9 @@ module.exports = {
       gasPrice: 0,
     },
     goerli: {
-      url: `https://eth-goerli.alchemyapi.io/v2/${ALCHEMY_API_KEY}`,
+      url: `https://rpc.sepolia.dev/${ALCHEMY_API_KEY}`,
       chainId: 5,
-      accounts: [process.env.GOERLI_PRIVATE_KEY],
+      accounts: [process.env.SEPLOIA_PRIVATE_KEY],
     },
     mordor: {
       url: 'https://www.ethercluster.com/mordor',
