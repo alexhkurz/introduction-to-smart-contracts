@@ -30,6 +30,7 @@ Configured Networks:
 
 - Localhost
 - Goerli. Faucet: https://goerlifaucet.com/
+- Sepolia. Faucet: https://sepoliafaucet.com/
 - BSC Testnet. Faucet: https://testnet.bnbchain.org/faucet-smart
 - BSC.
 - Mordor. Faucet: https://easy.hebeswap.com/#/faucet
