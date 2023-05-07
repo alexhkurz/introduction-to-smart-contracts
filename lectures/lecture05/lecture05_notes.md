@@ -56,6 +56,11 @@ Open source projects are typically governed by a combination of technical and co
 
 A standard open source project governance structure usually includes the following components:
 
+
+<p align="center">
+  <img src="./FOSS_model.png" width="700">
+</p>
+
 Core Team: This is a group of individuals who have significant contributions to the project and are responsible for driving the project forward. The core team is responsible for making decisions on technical direction, prioritizing work, and managing the overall health of the project.
 
 Code of Conduct: This is a set of guidelines that outline the expectations for behavior within the project community. The code of conduct helps to create a positive and inclusive environment for contributors and users.
@@ -89,24 +94,18 @@ The most common package management system for open source software is "package.j
 A software dependency graph can help developers to understand the relationships between different components and make informed decisions about which dependencies to use. It also makes it easier to identify potential problems, such as conflicting dependencies or security vulnerabilities in a library.
 
 <p align="center">
-  <img src="./FOSS_model.png" width="700">
+  <img src="./Open_source_dist_contracts_dep_graph.png" width="700">
 </p>
 
 ## Smart Contract Funding
 
-<p align="center">
-  <img src="./Open_source_dist_contracts_dep_graph.png" width="700">
-</p>
+In this class, we'll be building a smart contract to crowd fund open source. Students will pick teams of 3 people, choose an open source project they wish to fund and then use the Crowd Funded Loan Contract (CFLC) that we will develop to develop a smart contract based loan to fund the project. The contract will only require an additional file in the git repository for it to be fundable. We will use the Goerli test net to demonstrate the concept.
 
 
 ## Project Design
 
 <p align="center">
   <img src="./crowd_funded_lending_contract_model.png"
-</p>
-
-<p align="center">
-  <img src="./crowd_funded_lending_contract_model.png width="700">
 </p>
 
 <p align="center">
