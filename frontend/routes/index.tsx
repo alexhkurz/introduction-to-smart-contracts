@@ -140,7 +140,7 @@ export default function Index() {
       </Head>
 
       <div className="flex flex-col items-center">
-        <p className="text-3xl text-red-500">Goerli Testnet Only</p>
+        <p className="text-3xl text-red-500">Testnet Only</p>
       </div>
 
       <div className="flex flex-col items-center mb-12 py-4 mx-20 rounded-xl">
