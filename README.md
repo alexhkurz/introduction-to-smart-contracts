@@ -47,6 +47,8 @@ On some systems `npm run compile` raises an error [^error] that can be circumven
 
 ## Hardhat Tasks
 
+### Deployment
+
 To deploy your contract use
 
 ```
@@ -61,13 +63,15 @@ npx hardhat --network sepolia deploy --contract Treasury --arg 0x7169D38820dfd11
 
 **Exercise:** Inspect [`Treasury.sol`](contracts/Treasury.sol) and explain what role the argument `0x7169D38820dfd117C3FA1f22a697dBA58d90BA06` plays. Google it and look it up on Etherscan. It is a well-known stable coin.
 
-**Example:** When we run the command above, our smart contract was created on the Sepolia testnet at [`0xa386bd7CFef463232822dcCf89D4c2272cD4ccBd`](https://sepolia.etherscan.io/address/0xa386bd7CFef463232822dcCf89D4c2272cD4ccBd).
-
 If you get `Error: insufficient funds` go to a faucet (see links above), use your Alchemy login, and enter the wallet address you get from your Metamask wallet. If everything worked you see in your terminal
 
-`Contract deployed to: <deployed_contract_address>    
+`Contract deployed to: <deployed_contract_address>`
 
-To "verify" your contract run
+**Example:** When we run the command above, our smart contract was created on the Sepolia testnet at [`0x1b1cDCdBEFd2088C32ca0655CE01E5124F39C116`](https://sepolia.etherscan.io/address/0x1b1cDCdBEFd2088C32ca0655CE01E5124F39C116#code).
+
+### Verification
+
+To "verify" your contract (ie to display the code [on Etherscan](https://sepolia.etherscan.io/address/0x1b1cDCdBEFd2088C32ca0655CE01E5124F39C116#code)) run
 
 ```
 npx hardhat --network <network_name> verify <deployed_contract_address> <constructor_argument>
