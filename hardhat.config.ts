@@ -69,6 +69,7 @@ module.exports = {
   etherscan: {
     apiKey: {
       goerli: `${process.env.ETHERSCAN_API_KEY}`,
+      sepolia: `${process.env.ETHERSCAN_API_KEY}`,
       bscTestnet: `${process.env.BSCSCAN_API_KEY}`,
       bsc: `${process.env.BSCSCAN_API_KEY}`,
     },
