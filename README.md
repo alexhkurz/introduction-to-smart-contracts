@@ -4,7 +4,7 @@ A course at Chapman University Spring 2023 as a section of CPSC 298, the Compute
 
 ## Introduction to Smart Contracts
 
-(created by [Alexander Kurz](https://www.chapman.edu/our-faculty/alexander-kurz) and [Ronan Kearns](https://www.linkedin.com/in/ronank/) from Chapman and [Jeff Turner](https://www.linkedin.com/in/composedao/) and Steve Preston from ComposeDAO)
+(created by [Alexander Kurz](https://www.chapman.edu/our-faculty/alexander-kurz) and [Ronan Kearns](https://www.linkedin.com/in/ronank/) from Chapman and [Jeff Turner](https://www.linkedin.com/in/composedao/) and Stephen Preston from ComposeDAO)
 
 **Lectures:** Feb 1 - May 10 in Keck 153, Wed 12-1pm. No classes March 22 (Spring break).  
 **Office Hours:** Keck Center - Swenson #N305 Huddle Space (I may have to let you in, send me an email).  
@@ -53,7 +53,17 @@ To deploy your contract use
 npx hardhat --network <network_name> deploy --contract <contract_name> --arg <constructor_argument>
 ```
 
-If you get `Error: insufficient funds` go to [goerlifaucet](https://goerlifaucet.com/), use your Alchemy login, and enter the wallet address you get from your Metamask wallet. If everything worked you see in your terminal
+For example, 
+
+```
+npx hardhat --network sepolia deploy --contract Treasury --arg 0x7169D38820dfd117C3FA1f22a697dBA58d90BA06
+```
+
+**Exercise:** Inspect [`Treasury.sol`](contracts/Treasury.sol) and explain what role the argument `0x7169D38820dfd117C3FA1f22a697dBA58d90BA06` plays. Google it and look it up on Etherscan. It is a well-known stable coin.
+
+**Example:** When we run the command above, our smart contract was created on the Sepolia testnet at [`0xa386bd7CFef463232822dcCf89D4c2272cD4ccBd`](https://sepolia.etherscan.io/address/0xa386bd7CFef463232822dcCf89D4c2272cD4ccBd).
+
+If you get `Error: insufficient funds` go to a faucet (see links above), use your Alchemy login, and enter the wallet address you get from your Metamask wallet. If everything worked you see in your terminal
 
 `Contract deployed to: <deployed_contract_address>    
 
@@ -67,7 +77,7 @@ If you get `Error [...] no API token was found` go to [Etherscan](https://ethers
 
 Now you should be able to interact via your Metamask wallet with your contract on the testnetwork.
 
-Summary of hardhat commands:
+### Summary of hardhat commands:
 
 ```
 npx hardhat # lists all available hardhat tasks
@@ -87,7 +97,7 @@ npx hardhat --network <network_name> deploy --contract <contract_name> --arg <co
 npx hardhat --network <network_name> verify <deployed_contract_address> <constructor_argument> # verifies source code on Etherscan or BSCSCAN. Supported networks are Goerli, BSC, BSC Testnet
 ```
 
-## Troubleshooting
+### Troubleshooting
 
 If you get an error similar to this:
 ```
@@ -133,7 +143,6 @@ deno task dev
 
 ---
 
----
 
 [^error]: Error message occaionally seen after `npm run compile`:
 
