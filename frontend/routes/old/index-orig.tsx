@@ -135,12 +135,12 @@ export default function Index() {
   return (
     <div className="screen index">
       <Head>
-        <title>Introduction to Smart Contracts (devak) </title>
+        <title>Introduction to Smart Contracts</title>
         <meta name="description" content="Learning the decentralized way" />
       </Head>
 
       <div className="flex flex-col items-center">
-        <p className="text-3xl text-red-500">Testnet Only (devak)</p>
+        <p className="text-3xl text-red-500">Goerli Testnet Only</p>
       </div>
 
       <div className="flex flex-col items-center mb-12 py-4 mx-20 rounded-xl">
@@ -159,36 +159,6 @@ export default function Index() {
               >
                 Disconnect
               </button>
-
-              // I want to make a Balance button
-
-              <button
-                className={
-                  'text-md px-3 py-2 w-auto rounded-lg text-white bg-green-500'
-                }
-                onClick={async () => {
-                  if (web3Provider) {
-                    const abi = ['function balanceOf(address) view returns (uint256)'];
-                    const contractAddress = {address};
-                    const signer = web3Provider.getSigner();
-                    const tokenContract = new ethers.Contract(
-                      contractAddress,
-                      abi,
-                      signer
-                    );
-                
-                    try {
-                      const balance = await tokenContract.balanceOf(address);
-                      alert(`Balance: ${ethers.utils.formatEther(balance)}`);
-                    } catch (error: any) {
-                      console.log(error);
-                    }
-                  }
-                }}            
-              >
-                Balance
-              </button>            
-                
             </div>
 
             <div className="flex flex-row items-center space-x-4 bg-gray-700 rounded-xl  p-4">

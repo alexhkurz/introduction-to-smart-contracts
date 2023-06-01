@@ -7,9 +7,6 @@ import Form from '~/components/Form.tsx';
 import { ethers } from 'ethers';
 import { config } from '~/sponsorship.ts';
 
-// const env = await load();
-// const ETHERSCAN_API_KEY = env['ETHERSCAN_API_KEY'];
-
 const initialState: StateType = {
   provider: undefined,
   web3Provider: undefined,
@@ -130,12 +127,25 @@ export default function Index() {
   }, [provider, disconnect]);
 
   const [sendAmount, setSendAmount] = useState('');
-  const [txHash, setTxHash] = useState('');
+  const [balance, setBalance] = useState('');
+
+  useEffect(() => {
+    async function fetchBalance() {
+      if (web3Provider && address) {
+        const abi = ['function balanceOf(address account) external view returns (uint256)'];
+        const contractAddress = config.goerli_contract_address;
+        const contract = new ethers.Contract(contractAddress, abi, web3Provider);
+        const balance = await contract.balanceOf(address);
+        setBalance(ethers.utils.formatEther(balance));
+      }
+    }
+    fetchBalance();
+  }, [web3Provider, address]);
 
   return (
     <div className="screen index">
       <Head>
-        <title>Introduction to Smart Contracts (devak) </title>
+        <title>Introduction to Smart Contracts (branch devak)</title>
         <meta name="description" content="Learning the decentralized way" />
       </Head>
 
@@ -159,36 +169,22 @@ export default function Index() {
               >
                 Disconnect
               </button>
-
-              // I want to make a Balance button
-
               <button
                 className={
-                  'text-md px-3 py-2 w-auto rounded-lg text-white bg-green-500'
+                  'text-lg px-3 py-2 ml-4 rounded-lg text-white dark:text-black bg-[#0095D4] dark:bg-[#0095D4]'
                 }
                 onClick={async () => {
-                  if (web3Provider) {
-                    const abi = ['function balanceOf(address) view returns (uint256)'];
-                    const contractAddress = {address};
-                    const signer = web3Provider.getSigner();
-                    const tokenContract = new ethers.Contract(
-                      contractAddress,
-                      abi,
-                      signer
-                    );
-                
-                    try {
-                      const balance = await tokenContract.balanceOf(address);
-                      alert(`Balance: ${ethers.utils.formatEther(balance)}`);
-                    } catch (error: any) {
-                      console.log(error);
-                    }
+                  if (web3Provider && address) {
+                    const abi = ['function balanceOf(address account) external view returns (uint256)'];
+                    const contractAddress = config.goerli_contract_address;
+                    const contract = new ethers.Contract(contractAddress, abi, web3Provider);
+                    const balance = await contract.balanceOf(address);
+                    setBalance(ethers.utils.formatEther(balance));
                   }
-                }}            
+                }}
               >
                 Balance
-              </button>            
-                
+              </button>
             </div>
 
             <div className="flex flex-row items-center space-x-4 bg-gray-700 rounded-xl  p-4">
@@ -222,12 +218,11 @@ export default function Index() {
                           value: ethers.utils.parseEther(sendAmount),
                         });
 
-                      // console.log(transactionResponse.hash);
+                      setSendAmount('');
                       setTxHash(transactionResponse.hash);
 
                       const transactionReceipt =
                         await transactionResponse.wait();
-                      // console.log(transactionReceipt.logs);
                       if (transactionReceipt.status === 1) {
                         // transaction.success = true;
                       }
@@ -241,6 +236,7 @@ export default function Index() {
               </button>
             </div>
             <p className="text-xl pt-4">In ETH</p>
+            {balance && <p className="pt-4">Balance: {balance} ETH</p>}
           </>
         ) : (
           <div className="flex flex-col items-center py-12">
